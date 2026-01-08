@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Innovators Schooling System | Premier Education Since 2008</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><img src="images/logo.png" alt=""></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">CLP Chinese Language Program</a>
+                    <a href="#" class="dropdown-item">AI Powered School</a>
+                    <a href="#" class="dropdown-item">Agripreneurship</a>
+                    <a href="#" class="dropdown-item">Environmental Sustainability Programs</a>
+                    <a href="#" class="dropdown-item">Industrial Relations Development Cell</a>
+                    <a href="#" class="dropdown-item">Research & Leadership</a>
+                </div>
+            </div>
+            
+            <a href="#" class="nav-link">Admission</a>
+            <a href="#" class="nav-link">Facilities</a>
+            <a href="#" class="nav-link">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92111111111'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- 1️⃣ Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Innovators Schooling System</h1>
+                <div class="tagline">Shaping Future Leaders Through Excellence</div>
+                <p>Pakistan's premier educational institution offering world-class learning from Playgroup to Cambridge O-Levels. Where tradition meets innovation to create leaders of tomorrow.</p>
+                <div class="hero-btns">
+                    <a href="#admission" class="btn btn-primary">
+                        <i class="fas fa-user-graduate"></i>
+                        Admissions Open 2026
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Campus Tour
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-text">Years of Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-text">Board Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2000+</div>
+                        <div class="stat-text">Successful Alumni</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-text">Qualified Faculty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Animate all children of hero section
+const heroSection = document.querySelector('.hero');
+const elements = heroSection.querySelectorAll('*');
+
+const directions = ['up', 'down', 'left', 'right'];
+
+// Function to get random direction
+function getRandomDirection() {
+    return directions[Math.floor(Math.random() * directions.length)];
+}
+
+// Set initial positions and opacity
+elements.forEach(el => {
+    const dir = getRandomDirection();
+    el.style.opacity = '0';
+    el.style.transition = 'all 1s ease-out';
+
+    switch (dir) {
+        case 'up':
+            el.style.transform = 'translateY(-50px)';
+            break;
+        case 'down':
+            el.style.transform = 'translateY(50px)';
+            break;
+        case 'left':
+            el.style.transform = 'translateX(-50px)';
+            break;
+        case 'right':
+            el.style.transform = 'translateX(50px)';
+            break;
+    }
+
+    // Store direction in dataset for later
+    el.dataset.dir = dir;
+});
+
+// Intersection Observer to animate on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            el.style.opacity = '1';
+            el.style.transform = 'translateX(0) translateY(0)';
+            observer.unobserve(el); // Animate only once
+        }
+    });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+
+    </script>
+
+    <!-- 2️⃣ Admissions Open Banner -->
+    <section class="admissions-banner" id="admission">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h3><i class="fas fa-bell"></i> Limited Seats for 2026-27 Session</h3>
+                    <p>Early admission offers 20% discount on registration fee. Apply before December 31, 2025.</p>
+                </div>
+                <div class="banner-btns">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i>
+                        Apply Online Now
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        Download Prospectus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Trust & Accreditation -->
+    <section class="trust">
+    <div class="container">
+        <div class="section-title">
+            <h2>Trusted & Accredited</h2>
+            <div class="section-subtitle">
+                Recognized by leading educational bodies and accredited for excellence
+            </div>
+        </div>
+        <div class="trust-logos">
+            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
+            <img class="trust-logo" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
+            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
+            <img class="trust-logo" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
+            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const logos = document.querySelectorAll('.trust-logo');
+
+    // Set initial state for all logos
+    logos.forEach((logo, index) => {
+        logo.style.opacity = '0';
+        logo.style.transform = 'translateY(50px)';
+        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                observer.unobserve(el); // animate once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    // Observe each logo
+    logos.forEach(logo => observer.observe(logo));
+});
+
+</script>
+
+
+    <!-- 4️⃣ Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Parents Choose The Innovators</h2>
+                <div class="section-subtitle">Key differentiators that make us the preferred choice for quality education</div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure Campus</h3>
+                    <p>24/7 security with CCTV surveillance, biometric access, and comprehensive child protection policies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Highly Qualified Faculty</h3>
+                    <p>PhD and Master's degree holders with international teaching certifications and continuous training.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technology Integration</h3>
+                    <p>Smart classrooms, robotics labs, coding workshops, and digital learning platforms for 21st century skills.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Holistic Development</h3>
+                    <p>Focus on academics, sports, arts, character building, and leadership for balanced growth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>STEM Excellence</h3>
+                    <p>State-of-the-art laboratories for physics, chemistry, biology, and computer science with practical focus.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>University Placement</h3>
+                    <p>Dedicated career counseling and 100% university placement record with scholarship assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.feature-card');
+
+    cards.forEach((card, index) => {
+        // Random direction: left, right, or bottom
+        const directions = ['left', 'right', 'bottom'];
+        const dir = directions[index % directions.length];
+
+        // Set initial state
+        card.style.opacity = '0';
+        card.style.transition = 'all 0.8s ease-out';
+
+        switch (dir) {
+            case 'left':
+                card.style.transform = 'translate(-50px, 50px)';
+                break;
+            case 'right':
+                card.style.transform = 'translate(50px, 50px)';
+                break;
+            case 'bottom':
+                card.style.transform = 'translateY(50px)';
+                break;
+        }
+
+        // Increased stagger: 0.4s per card
+        card.style.transitionDelay = `${index * 0.4}s`;
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translate(0, 0)';
+                obs.unobserve(el); // animate only once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+});
+
+    </script>
+
+    <!-- 5️⃣ About Our School -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Institution</h2>
+                <div class="section-subtitle">Our journey, values, and educational legacy since 2008</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Building Future Innovators Since 2008</h3>
+                    <p>The Innovators Schooling System was founded with a revolutionary vision to transform education by merging academic excellence with innovation, character development, and global citizenship. What began as a modest institution has evolved into a beacon of educational excellence.</p>
+                    <p>Our educational philosophy centers on unlocking each child's unique potential while instilling core values of integrity, empathy, resilience, and social responsibility. We believe true education empowers students to become critical thinkers, problem-solvers, and ethical leaders.</p>
+                    <p>With campuses designed for optimal learning, curriculum aligned with global standards, and teaching methodologies that inspire curiosity, we create an ecosystem where students thrive academically, socially, and emotionally.</p>
+                    <div class="about-values">
+                        <span class="value-pill">Academic Excellence</span>
+                        <span class="value-pill">Innovation</span>
+                        <span class="value-pill">Character Building</span>
+                        <span class="value-pill">Global Perspective</span>
+                        <span class="value-pill">Community Service</span>
+                        <span class="value-pill">Leadership</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="The Innovators Schooling System Campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const aboutImage = document.querySelector('.about-image img');
+
+    // Set initial state: hidden and off-screen to the left
+    aboutImage.style.opacity = '0';
+    aboutImage.style.transform = 'translateX(-100px)';
+    aboutImage.style.transition = 'all 0.8s ease-out';
+
+    // Intersection Observer to animate on scroll
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutImage.style.opacity = '1';
+                aboutImage.style.transform = 'translateX(0)';
+                obs.unobserve(entry.target); // animate only once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(aboutImage);
+});
+
+    </script>
+
+    <!-- 6️⃣ Vision & Mission -->
+    <section class="vision-mission">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Vision & Mission</h2>
+            <div class="gradient-line"></div>
+            <p class="section-subtitle">
+                Guiding principles that define our educational philosophy and drive impactful learning experiences.
+            </p>
+        </div>
+        <div class="vm-cards">
+            <!-- Vision Card - Red -->
+            <div class="vm-card red-card">
+                <div class="vm-icon">
+                    <div class="icon-bg"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <path fill="#fff" d="M32 12C18 12 6.8 24.2 6.8 32s11.2 20 25.2 20 25.2-11.2 25.2-20S46 12 32 12zm0 32a12 12 0 1 1 12-12 12 12 0 0 1-12 12z"/>
+                        <circle fill="#fff" cx="32" cy="32" r="6"/>
+                    </svg>
+                </div>
+                <h3>Our Vision</h3>
+                <p>
+                    To be Pakistan's premier institution for innovative education, nurturing globally competitive leaders with strong ethical foundations who create meaningful impact in society.
+                </p>
+            </div>
+
+            <!-- Mission Card - Yellow -->
+            <div class="vm-card yellow-card">
+                <div class="vm-icon">
+                    <div class="icon-bg"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <path fill="#1C1C1C" d="M32 4C16 4 4 16 4 32s12 28 28 28 28-12 28-28S48 4 32 4zm0 50a22 22 0 1 1 22-22 22 22 0 0 1-22 22z"/>
+                        <circle fill="#1C1C1C" cx="32" cy="32" r="10"/>
+                    </svg>
+                </div>
+                <h3>Our Mission</h3>
+                <p>
+                    To deliver a transformative learning experience that combines academic excellence, leadership development, technological fluency, and creative expression, preparing students for success in a connected world.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 7️⃣ Programs & Classes -->
+   <section class="programs" id="programs">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Programs</h2>
+      <p class="section-subtitle">
+        Explore our carefully designed programs for holistic student development with detailed learning objectives.
+      </p>
+    </div>
+
+    <div class="programs-container">
+
+      <!-- CLP Chinese Language Program (Red) -->
+      <div class="program-card red-card">
+        <div class="program-header">
+          <h3>CLP Chinese Language Program</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Collaboration with Tang International Education China</li>
+            <li>Target Age/Grade: Grade 1 – Grade 8</li>
+            <li>Full Academic Year Program</li>
+            <li>Chinese Language Proficiency</li>
+            <li>Cultural Awareness & Understanding</li>
+            <li>Communication & Conversation Skills</li>
+            <li>Interactive Classroom & Online Modules</li>
+            <li>Cross-cultural Projects & Activities</li>
+            <li>Language Competency Assessment & Certification</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- AI Powered School (Red) -->
+      <div class="program-card yellow-card">
+        <div class="program-header">
+          <h3>AI Powered School</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Target Age/Grade: Grade 6 – Grade 12</li>
+            <li>Full Academic Year Program</li>
+            <li>Introduction to Artificial Intelligence</li>
+            <li>Coding & Computational Thinking</li>
+            <li>Data Analytics & Machine Learning Basics</li>
+            <li>Problem-solving with AI Tools</li>
+            <li>Hands-on AI Projects</li>
+            <li>Digital Ethics & Responsibility</li>
+            <li>Practical Assessments & Certification</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Agripreneurship (Yellow) -->
+      <div class="program-card red-card">
+        <div class="program-header">
+          <h3>Agripreneurship</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Target Age/Grade: Grade 8 – Grade 12</li>
+            <li>Semester / Year-long Projects</li>
+            <li>Agriculture Practices & Techniques</li>
+            <li>Innovation & Business Planning</li>
+            <li>Sustainable Farming Methods</li>
+            <li>Market Analysis & Strategy</li>
+            <li>Hands-on Field Projects</li>
+            <li>Entrepreneurial Skill Development</li>
+            <li>Presentation & Business Reporting</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Environmental Sustainability Programs (Red) -->
+      <div class="program-card yellow-card">
+        <div class="program-header">
+          <h3>Environmental Sustainability Programs</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Target Age/Grade: Grade 6 – Grade 12</li>
+            <li>6-12 Month Duration</li>
+            <li>Environmental Awareness & Education</li>
+            <li>Research on Sustainable Practices</li>
+            <li>Eco-friendly School & Community Projects</li>
+            <li>Hands-on Field Work & Experiments</li>
+            <li>Recycling & Resource Management Skills</li>
+            <li>Teamwork & Community Engagement</li>
+            <li>Assessment & Certification in Sustainability</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Industrial Relations Development Cell (Yellow) -->
+      <div class="program-card red-card">
+        <div class="program-header">
+          <h3>Industrial Relations Development Cell</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Target Age/Grade: Grade 9 – Grade 12</li>
+            <li>Semester-based Program</li>
+            <li>Leadership Development</li>
+            <li>Workplace Communication Skills</li>
+            <li>Negotiation & Conflict Resolution</li>
+            <li>Project Management</li>
+            <li>Team Collaboration & Coordination</li>
+            <li>Problem-solving & Decision-making Skills</li>
+            <li>Career Readiness & Mentorship</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Research & Leadership (Red) -->
+      <div class="program-card yellow-card">
+        <div class="program-header">
+          <h3>Research & Leadership</h3>
+        </div>
+        <div class="program-body">
+          <ul>
+            <li>Target Age/Grade: Grade 9 – Grade 12</li>
+            <li>Year-long Program</li>
+            <li>Critical Thinking Skills</li>
+            <li>Leadership Development & Teamwork</li>
+            <li>Research Methodology & Project Planning</li>
+            <li>Data Analysis & Interpretation</li>
+            <li>Presentation & Reporting Skills</li>
+            <li>Problem-solving & Decision-making Skills</li>
+            <li>Independent Research Projects with Mentorship</li>
+          </ul>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- New: Campus Gallery -->
+    <section class="gallery" id="facilities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Campus Gallery</h2>
+                <div class="section-subtitle">Explore our state-of-the-art facilities and vibrant campus life</div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Classrooms">
+                    <div class="gallery-overlay">
+                        <h4>Smart Classrooms</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Science Lab">
+                    <div class="gallery-overlay">
+                        <h4>Science Laboratories</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Library">
+                    <div class="gallery-overlay">
+                        <h4>Digital Library</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports Ground">
+                    <div class="gallery-overlay">
+                        <h4>Sports Facilities</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA/QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAgQFBgcAAQj/xABSEAACAQMCAwMHBggKCAUFAAABAgMABBEFIQYSMRNBURQiYXGBkbEHIzKhwdEVFjNCVHKy0iQ0Q1JigpOi4fBERVNzkrPC8SU1VWOUJnSDhKP/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QAMBEAAgIBAgYAAgkFAAAAAAAAAAECEQMhMQQSExRBUTJhIiMzNEJScZHBBYGhsfD/2gAMAwEAAhEDEQA/AAKlEWKloBRgtfNNn09IEsVR2p8M6dqilp4BHKR+Vi2bPp8am0WiBelGM5Q1iwShGekkZj5Rd8A6+iQSLcRSRh3TGBIhJGCO4jlO9aDY8e8OXEIke7aFiN45EOV9FU35RNIvLzVoZ7aB5EW2Cnk3IPMx6VS7eCaOWZRG5kRN15TkbjrXtY3HLBSe54mTmxZGlsbnDxtw67hI74u7dFSJiT7qefjTpa7hb1h/RspT9lYRpt7LYXcFzCPPikVwCcc2GB5a+iLFory1gurZuaG4QSxnxVhkfGhOPLQ0JudjBeL9N/NttVb0jT5cfCgv8oOiW9x5NOl/HcMRiN7R1ZgTgYB361YVgyOrA+INUvUOAtXu9TW9GuQSzI6sk09oA68pyuANtv8AOK0WjST8FkTimDOF0zVfbaMKKvEiH/VOp/2FSen2k8dnGl3cC4uAvzkix8gc+PLviniwgVr9GpeSE/GLw0bUyf1B99J/GKX/ANB1M+pU/eqwLD6K97MLgk++tqDQosvyl6bE8sZ0vUGeIkOvmZBHX86mK/LHoZJCaZqTDx+b+1qqeoWAbi7WIXmEYa6l870c3dvVb4lQWNx5NHEk5KKe35cEb5xt6qpHlehOV1ZrEHyr6JOceRX6nbYhD8DUnb8c6fdSpDBY37yv9FBEDn66xLhGMT6mpuECjmGc7Db11q3DUUbcQWmGj83nIAI7hST0Y0FzK2WX8P4ADaTqm3eIhv8AXSW4jiTdtL1Rf/1yan+z837qQYvX76Go1IrsnFtgm8lnqwIGdrBz8BTGL5QeHrp2S3e9ldRlljspGK743wNt6n9bsLy80+SDT742Nw2MTdkJAPRgkVT9B4A1DSNQ8rGv4ycSCG1AMi5zy5JwBn0H2UbVGad6E0vFmlyb5vFX+lZy5+FJbi3RP0iVfXbv91TphB3I3obwjO6591T5l5H5X4IKTi7h1Pympwxn/wBzK0H8b+HGOBrVpv4PUd8quoJpnCkkIIE984gjHfy9WPu2/rCsatLWQSmRxnl9O9UhjUo2TlNxlSNh4g480XTrVzZXKX1wQQkURyPWx7qzrSNE1DjG8u9RublFUyDtnO5zjoo8AMerFRF1p10+bnyeTsCQocJ1bwHprR/k3sbiz0i6FzbyQdpMGQOMEjlxmlyzWLHcdx8MHlyVPYcaVwrpek8r28AknH8tKOZgfR4VKmPx6+PjTtkpDLXkSnKbuTPXjCMFUVQ1MdDZN+lPOSklBmlbvcahmgoyikqtLUVghV6URaGvSiLWMAmTmvkY9Qo6es0s2kXatL2adoRguF3YZ6Gube8T9UfE0+VRvtRTa2YrSe6KbxRwtDqFsWtIoorsMCsm4B8c4H2VL/J3e3GjWJ0fXR2awsTbTfSXB3K5HQeGfGl8Xai2jaK16kKy8sqKUY4znIqvWvHOk3aATiW1c7EOMr7xXdhnmeNaWjhzQw9TemapFq+mHB8sjPpAY/AU4TV9NH+lj+zf92s41e48ks47iPz15I8YJGc1GprsrHa0yPHnO9N3D/KZcLf4jXhrWm5ybkDHhE/7tLGtaX+kn+xk/drIl1m5PSxbHrb7qKuq3Z/0A/3vurdxL0bsk/JrQ1vTR/Lv/wDHk/dqF4ovra8tYRYmWWWOTJXsWGVx4kCqGNTu/wBAb/hb7q9/CV7gAaedv6LfdQ7iXoK4JLyROp6Xqj6ncTw6bLJHI/MMgd437/Go+40HU525m0q5B6eYwx7s1Ym1O/zvp5/4W+6hNqt9+gH2hvuodeS2Q3bLayAt9C1SJyV0m5O/55H2mpnRNP1G3vTPNpcsaqpCkAHc+o0cave/+mn2Bvur38NXY/1eR7W+6t15eUbtV7NWsNT02Kxgi8oOUjCnMT9ceqjnVNNP+lIPWrD4isiPEEwPn2mP6xH2V4eJcfShA/8Aymj3L9C9j8zXDqWmn/TYB63xQm1HTc/x62/tVrJjxQnevumpH40pg4D+rt6PcP8AKDsmvJrJ1DTv0+1/tl++hTanpkURlk1C0CAZz2yn6gc1lR4nTBISU48Jc1YJJYbe1ea9nWNFcKWdsDpQed+jdtX4ip8XJqvGmvGaztZU0+1HZ25lHIuDuXOfE9w32FWTR+FrCxxJ2AlmIBZ5Dz4OO7uFRuoce6LaKRbdrduNgYxhQfWfsq7w/OQRSEYLorY8MjNTz5c1JNUh8GLDzunbGi2qIuAiAZ5sY6Gioux9NHYDloa9K47fs7KS2QJlofLR2pOKDCCxSSu9G5a8I3oBI8LSgtKApQx0PXwptQHiiioK8UUVFrGG/Lm7T9UfbUiq00C/wtP1R8TUkiUUhSo/KcMcITf/AHEXxNY2dl222NbT8qK44Pl6fxiLqfSaxmRSEz6DXr8E/qkePxt9Vs1vX1C6JAMbBIfhVs4YIThqwdjgJbFmOO4ZP2VVuI1/8Fg/Vh/Zq1aCuOFrbHUWT/stXLj+JnflvppIYL8oXCw/1lJjr/FZv3aKnyi8JgDOpSf/ABJf3aqN/ZR2fD91dIi9pFAWQlRgY9FUq04l1Dz4mht3kkwEkeML2Zzk+g5G29dWJRyK4o5+Kh28lGcjZ0+UPhUgH8IS5z+iTfu0dePeGG2F9OT4Cxm/drHr3ie7SztRBJZiblJndVLHm8CCoA9HLkemkLxRc208EpuLS7RkJkiQOvKT3MSo3zv5uR6ao8T8I51lxeZM2UcbcMOOby28x1yLCbp/w0s8a8JBCz31/wAo3yLGUf8ATWNNxTcpakm4t5550BHKhXyYhumOj8y+vHryA3biLUDFGV1C2kdslohGQV/WyoHp2J29O1L05+kP1MH5pf4NvPHXBajz7u9Prs5f3aG3yg8F4KrdyqT42cv7tY5FqU06GeW5gVQ4XyYkBmBHjjGPbR9NeSa3uJLp4u15ikKcw83vD5AwceBI61unP0DqYb0kzUxxvwsXwup8qk9DbSD7KOnFvDDr/wCbr6uwf7qyyRLqLRoZ1WB7yR2LAYzCoYjcYwebrkGmrPr8dmLpIIZoFhMswhQExDOMN4Gl6UvQ6yYa+J/sbB+NHCIB7TWdvAQMPspEOvcN6ldpaaVfRXE7KTyFcE4BJ6jwFZDbSalcSZuokW3dOZGUDvGQPdT7gEn8fLbm3+am9H8m1LVNxaH5F0+pGTotHyjxIqWnLGikh/ojFM+P1zwldtgZFzF3empD5RxmKzPgr014/XHB95n9Ki/aqEft4lsn3ZmROPMNfR1sv8Dt/wDdJ+yK+dnX5pj6DX0fbqfIrbbA7FP2RVOO1jE5uA0kwLjahr0o8g60IDavMo9VMGRSaWwrwCsE8xXhG9ExXEUpjNkt9St/zb5PUHFFj1TU4gMXcuBv567fCtOZMqcjO3fUfpNjbNZIXt4TudzGD3139I5FxHyKZba9qBkRS8L8zAbp41c7O3vZhkwx4Hg3WpnTdJ0+W7iSS3h5S2fya929WS6hh5SoSNeXpyrinjwyatksnGVKkilrp9yLhXaI8oGNt6NFLF/PHqzU+owwxg4O2azow2STvNJHr1nIz7zwqZUfJfouG83bfYd1Dtl4Zu6flFrmtre7i7OZIpo85KOAw91QOqcHaBOrM+kwqWH0owVNWoWUCRMOxi5lwM9mBQjBEPNEa48MUFCcNIsPPjnrJFO4tgVNMRUBAVogATnYKasWipy8Lw47rKT9hqiONFxZlVAA7ZBgfqmp/SkxwqhHUWEn7DUuFfTdlc7+riyocQQ54S1AD9Easm1C3CWSYGMtnP8AVati1mAycOXiDbmt2qg8RWCR6PaqgHM90o9nZtXZwekGc/8AVdci/Qqdvqdxbsqns3WMYAMa9PdT0cQ5BJsLfnIxz4GR6cYpjPZyNqEsKDOCBVk0XSIIADJGsj95I6b12HlETb6+qRSR3GnW0ysc42XGwHcPEZ9tOJOIYponA0S3BYfSB6Y9lWubSLS9j5GhRc7cwXcdaRa6fDYy9nHEOQA+djrtWDRUrfWxFEUu9OinYtlnyFz4DAFez61FLb9kmmIBnIwQR8KtN5o9vfHmeNRvscemvEsreEvGIUwpXGVFajUU59YVURUtVQqNvon7KayXst6yxythFVsBVVe4+AGfbU5rGmRSDnhRUfvx37j76hLKFo7hgw+icfEVjUXizcSWkKgbCJD/AHBXvAKc3Htt6Yp/+W1NdFk5xy9yQD9lRUl8nMfNx3anu8nnP/8AM1wS+3f6Hrw+5/3LN8o0fzdoP6D1J6vocGs6ZNZXTyJE06k9n1ODQflGi2tBjbkerPaRBkmBzjn8a5XfV0LWugrKla/Jzw3Gg57eWZ/CWYke6rSIhHGsaqQqgKPUOlODCThedwPQajtatJhbZsru1ik5vOa8YlAvjgEZPTanePJP4nZGMscNYo9lTuFDWCRiAsbnPfymmfB7Br6UNq1rfSqXDLCmOz3+j7OnjVwUHnG539NBcN7C+K9EHc6XJb2M13JIoWKNpCoBycDOKp0nE6gfN2hP6z1rMljFc2sttPGxSZCjdwIIqn3XBWjxysBFKuO4TE0cnC1VGwcXF2plNk4pvD+Tt4k9eTTVuJNULZDxAeHZ/wCNXMcKaUki/NO/oZ8ing4f0dBj8G2/tTJ+upLh5HR3WNbIIOlNdI/iK+s/Gjo1N9Ib+Bj9Y/Guo4STiJBBU4I3Bp/5VLMoEshOOlRqNThGqiYjQ8QZIG2/pqt23D932ztBxDqsalieRShVRv5oBXYb99WGJtx66FpZ3Pt+NHyLQ6nQiFiTmmBIJp/dti2aoW5uEgQs5xv0pZ7jR2IDjQ/wQ/75P2TVh04f/SS4/QJP2GqpcV3M01ozNEI17VMcwO4was2jzhuGYYwQeawl/YaufB9ozrz/AGMSL1ZcaFdk9Bbn7az7WiJbW2x0SYN/dx9taHrhSPQb0Fx5tqef0HfI9lZ5rcT2vJYorzXirA8sUa8zIxUMVwMk4HX1V18KqTOb+oO5JkCsfLql2/8ASFS1o5wuD4/tV7HwzxDPNLcxaPdGGYhkyUU+0MwI9op9bcNcRIVDaJc4Hf2sPjn+fXUeehzFNgAZ/wA5NcjhkOdzn7KLHw5xFkY0a5xt/Kwn/rog0HXUH/k9znmxsyHu/WoWEbyPyBeXbfu9lNZnyT/vDT6XR9ecqF0S79fm+ProR0HX3YE6NdAdozblehHrrWYrl0/0G8UPxFR5jCzXDkDYL9ZNT91w3r/ZRn8EXQwuPzT9tM5tI1G0iu5dSs5LWJjGqySjYecSTt4CsAVw31mB/Rvu+6rF8l8fNxjbk9fJp/8Al/41BaXbS6df6raXeBLaQPHKV6ZV2BI9G2R6MVbPk/sZNO48t7ScqXjt58svRlMaYI9hrkkvrrPVh9z/AHLH8oiefZjH8m3xqzWS+bJt3inF7pdjqQQ30HaNGCFycYFRupfhO3u2XTLctbsiknlDedk56n1VNYn1OcR508Sx1qh6y5OABnuzURxPpt3f2CxW1ppFyyvztHqUbNGMA7gKPpevaj6dPqbXHLqNr2aEDlflxk+GMmpVj5pPoNWqiF3oVvha21CG4/8AEJNPPmsQLSApjPpJ3qzA4HsqG0d+e89SNUywxj1UI6qwzVMcx3KIvN2YEg/O76j55C7EmlNQXot2LFJAXPnr66WetDb8qtLPWkoqyDin3G9NNHuM2Q3252+NZBBxHris5/CsvT8+RW92aQde1cwdkL2QLzczYABz6xg/XTdF+zc5ucd3EW5BKnN/N5hmnQnRMdo6rnpzHFfOkt1O8plnuJTJ1LljzfbRJLq7eDlluZ3iByFMhOT40VjryC/kfR4uI407R3VUUcxY9AO80w0jXdKMjY1G1wBjeQb18+i7mVSFnk6YI5iDjwOTQGZPNHKC/TDbU3ILofR9/r2nu5tEu4vOGeZJFOO81EQapw9jmXV4C4BIdn5mA9Ge+sHWVA7FNinQY+2ujwWTtBzIw79ip9ffW6d7m560RpfEevWV6Oys77TZrd25yWuGhYNv4qc9etO+F59aurqO00q7sbw2ykCCLUFIVTkdOyyevjWVhCjAuyyIPpb9djRLeVrK5W40+S4hdOj826n1jFPGEF4Fnzy0s1W01S6iuzbz6bGzpIY2Jn51yD6eu+anNPuuJbhTdafoVu67kOrorEEkHqPEGsf/ABi1ySOSH8I3Lqxy2ZG3HvrrDXdW0+OeGz1C4hjnQI6Rv3A52J6b+FFUgThkyayZr34y8SJkvw+7471nt2H7deNxvrUI+c4Zuc+IEZ+D1iokKyMSznm2YJJjPfv7RS0klQchllbvVe1OKPMhe3ZtEXyiam3Thy6bHXltub4Guk+Uq9haNZuHbmIytyR89sw528FHefQKxwSzRJkTTdqSAjLMwxt4Z/ztXs8k/KsrSSmXmOGeUtjIwcZ6HfrQ5g9uzb4+PL99jwzqIPotHFLPGWoMPN4c1Ieu1esSa5vIovm7u5RMjnAmc59PWlyX+oMIz5VeCNFI5e2bYE0OYPbs2KXinWW/JcPXpz/Otm+2mtxq/EMsEiScMzSxOArRPGCHyRtgnHvrJZNR1N5WmN9eHmz0kI6jHq6UvROINc0WdrjTr645n+kHZnRuoGQT3Zz164o2B4JLwXLWzb6hc3VymndlcXKAPPA5zKOUY67bjFS2lJq0V1Z6xZ6TdvOlq0ccvZhlKsduYZH5oXG/QCsvtdX1eBuc3DzjGMTEuoHqPTpU5+P3Eh0r8GLd9hahDGogjCMMjAJbGfZQ0CoZKpbGy6BrgutMjl1N4ba4VmUxu6L0OxwGPX11Jw6hZzyCOG7t5HO/Kkqk49QNfMKQjkdnYs2B2aknrn/vtXsLTQTPKkjQgJtJGME+GDS0NyOtTfPlDvHsNChnjMiny2FR2blWOT4iptHHYc2TkJvnfuz1NfNTXs8rI00khEgzEpkZiT49afLxBq0aco1a9DEMCizMSBjvoOIYx+ZtfC0naXb43xHmrITnpXzpZ6zqOnXkcsN/J2qkEK7sQ3oIzvvVgl494jfm59SjibmHmxxRDHq5kJ+s9evdSxjSHnBtmzM2KDI1ZAvyjcRxxCJTaSEZzJNDl29eHA9wFJtPlJ11Zi13FbXMON4o07In+t53wotC8jRrDP8APLS2fzjWd2/ykWjIst3ZTq+N44RzDOTsCcd2O6lP8p2n5yumXx9fZ/fSKLC9DKBdc4ORv45rzzSomjY5C79T09dN1t7mI/knGRkZFHt5eVGSZMKTnda6XoSUnKlseLMzsrPjlOQT7K85CxfssADoOanKC0wxC9BkYjJ399DhMShtwjZwcbUL9FFB3qwUkbu/OVHKBv54++i9gjuOdyPYdvqo7PH5M/NOD/RDnJ+qkQjm5eV1HobFa2FY42eIsfP50J69Ttn30tiUI85fPzsrKce4mj3EDCNrp+zGMLhWTf2A5rrUylQY4I3DDpysfqBpWyij4ERQu7gQoCqjJDFTvSY1SSNuyWRnY7DlyPcKcPYXFtbtcTwv2IYEl4yoGenWl/xi2KQ22HI/KczEL7MULDy6g5YGh5GukliRxgfMMob1ZxmlRW0rn5qObkHR1ic8w9VKhs5IFDy2pYAZJRT9q108kc0Ia0VoSDvzSY+AoWOoiCqqeSFmaT84MhXl9NHjgSNe0lkPOepKMfgK6A2MZDXLsXO57Fl6+2kXMhnXFrNOyA7rNLsfspbDy0ewL28vO2AvducY+NLvORURUkVvnB3t9oFOLeaC3hIWS7gPjBMoz7mpldymaWFe1lky3Wd+Y/HasNVEhGsYQh54gGGCCX9/0KFY9mrmGaRFI73Y7jx2U05W4UQKvlV+noE4I/aplJcFLpLiCScMD85JJJ52MeIOaAz0HMiW0coeCSGZG2McbtlfEnmRQfZmivDZTcphuoIDnz2cuQceAEdEa/5oxy3l6oZfOXtAMj/i3poLrya4VbKaeO36socKc9+2aNjaIIEtnXtJB2TZ5UZnJ+pVNE8nQtECiXLZ3lV2UL6SCoPuBr2S7t7oDyq9v5IkcYV2BwfQCcUM6tLHfN2F/qS2nLja55XP96sNURUVovNIpWC7lG/Z4lDKe7Hmge80X8HRxR+UXsRQEedCVZlU+sffSba/0xHeRptW7VxlnjmAJ9vN1oMeqpM8q6jPd3EBPmI91zED2tisFKLHEXDr3fz5truKMYaJ4LZ3DevNMPxbuZpri10xJZZiA0gMTlsZ68qgkf41Ky6rpnZ9lZxXwlK4UvOOUbeAr3TrixESxXWjtcSr3hsEn1chopsEsGOfgr+oaRe6Tas12ojlVupRwSfDcCmccqm2E8oMk7HBDNv18O7ardcSxNdW8VtpRtWZwRG27Nj0coNWBkvLlCsXDbxv3MYZv3aPN7ElwibXK6/79TO45Zr7tGaQxBMDl5cEj20k3cEluiqTNcMeqnAPvFWK44bu7nV2tZZ+ymugx5OTdBsAN8fzvqoh+TrUIbhbqScAIQcFBjb+tRuJJ4s0ZVVlZiR5XjEkMac+dxnK49VGkjiVyO3z6gf3aXxEUtdTMD3DFoYznl72J6bd2w99VyScs2ZCS2OtMo3sReRY9JLUdtI0jdokaqAdwhIA+uiR3ScwyrD0K/8AhTsQ2799uf1hj7KcwWNvzDM2mR9/zjk/VikckVjjyLyiMnu45YxFGknOe9pObm8BjAr1JYmVe1DZI71B+NHnES3bBVgdeVgDEvKpI3yKKdLDMOWFjgkARyj7azaAozb0ExSacIzzSMGxsBaIcnu3zTKLsXLCQIPO6kd/sqZg4clmGI9OvHzgZ7dAPhTCezjt74206SRlQwZS4ZgR6QMVrQzjNO2kEhs7Fjlp7NNvz3k+w0G8htYLoRwyxSpj6cLNgnHTel/gof7aVF2xzRE/CuXTeU5F1Gd8gdi+aCkvYZQmvwhodOW5A5ZSynfaYfA04k0WazgMyyMAoz+XQHHszUZJaBZFTtmYuQCWj5eUePWjfgxmbMc9uRn84lfjt9da/bGUW9VENbeUXitGLy7cgkFe1yMZ8Cae2+g6lbrz2ovo/SqgZ9zVFeQXKDc230uY4uozvj0GlFbmMEG8UHGMLKx+FB76M0U61Q/1C91q0iYT3t6p7g7D769stMuXla4s5ZyxP0xHzb+zr1qPSwubmAsZELPkcrvgjbxO1ORb6pG3PEsvUbwyggbeKnFZ7bhirdtEhcPrkcfLLM/L/Sshn3laiJA7XsHbyuWL4JKYxse6jTTasyhZ5Ljl5s4kl7vaaaokr3luhkR3YtjDggYBIyc1kmCTVbE60eriFCrF42UFS1gHJHr5T8ajLmK5dWScgKxyQLflP1LTpPw9bxcsD3XZgEfNS8y+rY4pnK+rOD2nlJOO80qKSr0OdOubxQ1rDOoRQNnt0fcnG2VJr24XUIXIPZqx2J8iVP8AoFMU8oileQko55eVmYLg7nxqQNxqt1B2iXhdC2weZc+4ms9GLFp6UNLN7yzVzDIyg558Rc2R7RTuwn1G6Be0YGRck9naR5AHfsKZzDUOfEqzAHJxnr9dChW6gVQgki5c8xDBOvqO9NVg56fKOWjvxdNcgyi4684jIOemenpo8mra3ZsgN3PEHbAJUUxiN1NL2KXWG5CWYynA9opEkEyv86RJhunlC/aay+YZNpaEhcjU7udLySS4nkYHllc5PsOe7Hop3DNxIEKpd6hGnj2vKP2qgMTj+aB35mUfbSGJyFllDYxsG5s7+6iZyXgkIJ7y9uedpneUghXkkxj2n76nrO24hmiAivmWPP8Atk22x3mqxPEVXkVlK85bzs757ulAOfMBe3HKG8d8+yto9jdRpaosOo+W6dKVmujLNKoTIkRsAnfoNj1qZs7CW9iEo1a2XnGSrXaAr6MFdqoouGjVRiJuXJyobfIwPd1o63MigFSFJVuqnv8AbRaKQz0qLbqPC+mtJJdXV3b3EgGeWO4Dc3uA+vw60rSOG+HJLNX1FLWCQ7gyvKOYHw5TjYYqqxajcpDIpeNiyBU8xvN2x4ev30ZtUllVBcRxS8q4GI2AHqGP84ra+xXLE5Xy/wCiFUs4yoyMEnfOKWol5lzG5Jjzj0eNWWHRo5T83ol1Mc9WnP2im2uWL2cclvLp0FrNyCQBVPMV9ZJ9VLzpkejOMXbIGZhb9gZ43wSrbfzd8++lrK3KCObcEZI+vNTFva2N7bRr5KOYxc3mDfHQn3mlnSbME8800WRgp2fd7qLyR2YY8Nmvmi9GQhmkYKOduUpkjO1DeZA0LO3LgqOmdjnP2VPPYaep5l1Rl83k/JE7eHSm09jp0gHPPc3HKOVSqgBRWU4AngzvRArfVLmBl7C4dd8ZH+NO14l1cRqEvpFDE5GFO/u9FC06zguIpBLLjkYqqlfoDx9NGXQpS6diLebkGOUScpYnvOfXQbgmOlmcb3IvUL+4u+W4upWklBHnt4A4+2pGDWZ7UMqLBIqkEB0Vhg0i44Y1CSJU5bZOTOSHGW9e9ITRri3iMUqRsDy5ftBkDwFM+RonHrqe3glX4plIaN7DTG5R18mAz9dRdxqUl0zJ2MCBlyBFFg9en1V5JYGQyRwESTytiNVcYVdzuT30e60G5AkFrEZlZAqlZASvjt30tRKSeWnpsD0q+kslSR41kIkaIrMhIySO499Sp4hsmUtLoNi7cwXmDMpNV+00e+s5Abu0n7PnXmCrgkDwJoxtHZY+dZQWYmTzMhenTx6VpKNiYsmRw1Q7vNQtZZJDFpsMOBnCyEjv2posi/hWLCqoORgHYeac0kafM6ueyk3YKMrjzfH66FcWl3LqcEFvOQX2T5zpt3+yjGMTZcmRK0vP8lkttZsRbRx3OjW0xViva9owZt6Z3d9p8glKaeU5SDtJnlrxtIu4VjEkc/m8zsypzgHuAIqMkgk7M8yurO3nLyHzR09tTUYl+ea8C5po2jmC26JyqMtzEncj7vrp9o+oxWS27tbRXKFWXspCeX6qiZUuQsjQLMspYFWClcY3BB7j1otha3SRDyoSeap7Lm3A22HoFUcVykFkmslUStxqNnOSRpsUPnY+bdutMZrqBWbFpGcYG7E10FhLcy9jAyt2a87E7ZOc4B7+opM2mXUTqXhkYs+SEAIz3b0iSvcrKUmthMUhF7NLycqqmTyqcAH/ALU9fVBJDDG9pbErGFBCYJAHU1DJY3yXTNIrAA4wDnanMkEmTyRS5wAoI6CnlFWRxZJuOqoN+EECgrawAk4G2aaSztcSwFkQAvgcoAryS1MYJc8vKMKGIB9tIbTJJkjkSSPHLsnNuKMVGtRJub2Q6TUJIkZU7PHN0Zc1x1SZS2Fg2/8AaFCe3kGxhAO/R++gtBJkfNOT1Iz1NZJDSlKtj24upp1IlddjjGyilJdPCzGOQqAPzSDTeSzlk3kITlznejQorSrHzRlVXds4B9Zp2kShKXM7HCazfqFAuWGBnGB91DOq3znJu3z4bChmBlYYVX3wfOxtQ2SQHHYn2DNCgyk0WBta1I86+WTYC52cjNAtrmW6tZJrhu0kbK5bfbwrq6oJHXJ/yA0u5lhtImiblKu8Y9Wxqwx6xewPyo6kb/SQGurqGRajYJPkQqXia+jOBHan0mEZ6U0vtavb+B4J2j7JgMqsajPf4eIFdXUqLNuyHsG+dv0wOUxAkeqtB0ews9VH8LtYiT1KjBrq6jlBw7fISEnB+iuSOwkGBnaZ/vqI1DhbS4QeRJfbK1dXVMeyh66iwSyrFlQnLjf+gKt2g2MV/qEsc5kCrbK68jlSG5sZ91dXVSXwonhbWWVfIfaxokenqWgvbw57mdSP2art32iYxPKd8bmurqktyqk29WMI4O2lQSSSEMcHem+nqF1eJR0EhA/vV1dVUQk9V+pdtH0pL7S7q7a5uYnhl5UWJgFxgeIJqs31/dJM6iZzy95NdXVLyWlJjGW+nZCS5z6zQ4l8pDtIzbIzdfAV1dVUTnsE0E83bBtwMYz3VajosLcP21+bi4EskfOyhl5c59VdXUMm7Dgf0F/cqtw7hyA7e+gMpdhl3G/ca6uow3I5ZOgGpW6Qw868xbnxkn0VI2cSzzWsL55HIDAHGdjXV1PPwTxP6bDX2mwwswR5Mels0y8jQkZkk6eNdXVojzESWcIUseZjzYyT3U0tgElmx3HA9G9dXVR7HKvjHsFrHLCzsWzzHoaT5Iv+0k94+6urqVFnsf/Z" alt="Auditorium">
+                    <div class="gallery-overlay">
+                        <h4>Auditorium</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Computer Lab">
+                    <div class="gallery-overlay">
+                        <h4>Computer Lab</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New: Academic Excellence -->
+   <section class="academic-excellence">
+  <div class="container">
+    <div class="section-title">
+      <h2>Academic Excellence</h2>
+      <p class="section-subtitle">Celebrating outstanding achievements and recognition</p>
+    </div>
+
+    <div class="excellence-cards">
+      <!-- Card 1 -->
+      <div class="excellence-card red">
+        <svg class="progress-ring" width="150" height="150">
+          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+          <circle class="progress-ring__circle" stroke="#e41f1c" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+        </svg>
+        <div class="counter-text">
+          <h3 class="counter" data-target="95">0</h3><span class="symbol">%</span>
+        </div>
+        <p>Board Exam Success Rate (2024)</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="excellence-card yellow">
+        <svg class="progress-ring" width="150" height="150">
+          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+          <circle class="progress-ring__circle" stroke="#f8b909" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+        </svg>
+        <div class="counter-text">
+          <h3 class="counter" data-target="55">0</h3><span class="symbol">+</span>
+        </div>
+        <p>National Awards & Recognitions</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="excellence-card red">
+        <svg class="progress-ring" width="150" height="150">
+          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+          <circle class="progress-ring__circle" stroke="#e41f1c" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+        </svg>
+        <div class="counter-text">
+          <h3 class="counter" data-target="80">0</h3><span class="symbol">+</span>
+        </div>
+        <p>University Scholarships to Alumni</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="excellence-card yellow">
+        <svg class="progress-ring" width="150" height="150">
+          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+          <circle class="progress-ring__circle" stroke="#f8b909" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+        </svg>
+        <div class="counter-text">
+          <h3 class="counter" data-target="67">0</h3><span class="symbol">+</span>
+        </div>
+        <p>International Competition Awards</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+// Animated counter + progress
+const counters = document.querySelectorAll('.counter');
+const circles = document.querySelectorAll('.progress-ring__circle');
+
+const speed = 200;
+
+const isInViewport = elem => {
+  const rect = elem.getBoundingClientRect();
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+};
+
+const runCounters = () => {
+  counters.forEach((counter, idx) => {
+    if (!counter.classList.contains('counted') && isInViewport(counter)) {
+      counter.classList.add('counted');
+
+      const target = +counter.getAttribute('data-target');
+
+      // Animate number
+      let count = 0;
+      const updateCount = () => {
+        if (count < target) {
+          count += Math.ceil(target / speed);
+          if (count > target) count = target;
+          counter.innerText = count;
+          requestAnimationFrame(updateCount);
+        }
+      };
+      updateCount();
+
+      // Animate circle progress
+      const circle = circles[idx];
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+      const offset = circumference - (target / 100) * circumference;
+      circle.style.strokeDashoffset = offset;
+    }
+  });
+};
+
+window.addEventListener('scroll', runCounters);
+window.addEventListener('load', runCounters);
+</script>
+
+    <!-- New: International Programs -->
+    
+
+    <!-- New: Upcoming Events -->
+    <section class="form-section">
+  <div class="form-container-main">
+    <div class="form-section-title">
+      <h2>Reach Out</h2>
+      <div class="form-title-line"></div>
+      <p class="form-section-subtitle">Fill out the form below to get in touch or register for our programs.</p>
+    </div>
+
+    <div class="form-image-wrapper">
+      <!-- Form Box -->
+      <div class="form-left">
+        <form class="form-main" action="#" method="post">
+          
+          <!-- First + Last Name Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-input" type="text" name="first_name" required placeholder=" ">
+              <label class="form-label">First Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="text" name="last_name" required placeholder=" ">
+              <label class="form-label">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="email" name="email" required placeholder=" ">
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="tel" name="phone" required placeholder=" ">
+              <label class="form-label">Phone</label>
+            </div>
+          </div>
+
+          <!-- Details Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
+              <label class="form-label">Details / Message</label>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="form-right">
+        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="School Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Industrial Relations Development Cell</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Research & Leadership</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navItems = document.getElementById('navItems');
+        
+        menuToggle.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navItems.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navItems.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
