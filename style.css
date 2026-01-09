@@ -627,7 +627,7 @@
        /* Section */
 .vision-mission-modern {
   background-color: #000;
-  padding: 120px 20px;
+  padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -785,10 +785,16 @@
     color: white;
 }
 .programs-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 80px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Card */
@@ -796,6 +802,9 @@
   background-color: #000;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  height: fit-content;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -874,6 +883,11 @@
 .yellow-card .learn-more-btn:hover {
   background-color: #F6BC21;
   color: #000;
+}
+@media(max-width:600px){
+    .program-body li {
+    font-size: small;
+}
 }
 
         /* New Sections */
