@@ -45,119 +45,62 @@
         </button>
     </nav>
 
-    <!-- 1️⃣ Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>The Innovators Schooling System</h1>
-                <div class="tagline">Shaping Future Leaders Through Excellence</div>
-                <p>Pakistan's premier educational institution offering world-class learning from Playgroup to Cambridge O-Levels. Where tradition meets innovation to create leaders of tomorrow.</p>
-                <div class="hero-btns">
-                    <a href="#admission" class="btn btn-primary">
-                        <i class="fas fa-user-graduate"></i>
-                        Admissions Open 2026
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-calendar-alt"></i>
-                        Book Campus Tour
-                    </a>
-                </div>
-                
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-text">Years of Excellence</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-text">Board Success Rate</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">2000+</div>
-                        <div class="stat-text">Successful Alumni</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">150+</div>
-                        <div class="stat-text">Qualified Faculty</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        // Animate all children of hero section
-const heroSection = document.querySelector('.hero');
-const elements = heroSection.querySelectorAll('*');
 
-const directions = ['up', 'down', 'left', 'right'];
+    <!-- NEw  -->
+     <!-- Hero Section -->
+<section id="new-hero-section" class="new-hero-section">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline id="new-hero-video" class="new-hero-video">
+    <source src="video/home-hero-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-// Function to get random direction
-function getRandomDirection() {
-    return directions[Math.floor(Math.random() * directions.length)];
-}
+  <!-- Overlay -->
+  <div class="new-hero-overlay"></div>
 
-// Set initial positions and opacity
-elements.forEach(el => {
-    const dir = getRandomDirection();
-    el.style.opacity = '0';
-    el.style.transition = 'all 1s ease-out';
+  <!-- Content -->
+  <div class="new-hero-content">
+    <h1 class="new-hero-title">The Innovators Schooling System</h1>
+    <h2 class="new-hero-subtitle">Shaping Future Leaders Through Excellence</h2>
+    <p class="new-hero-text">
+      Pakistan's premier educational institution offering world-class learning from Playgroup to Cambridge O-Levels. Where tradition meets innovation to create leaders of tomorrow.
+    </p>
+    <div class="hero-btns">
+      <a href="#" class="btn btn-primary">
+        <i class="fas fa-user-graduate"></i>
+        Admissions Open 2026
+      </a>
+      <a href="#" class="btn btn-outline">
+        <i class="fas fa-calendar-alt"></i>
+        Book Campus Tour
+      </a>
+    </div>
+  </div>
+</section>
 
-    switch (dir) {
-        case 'up':
-            el.style.transform = 'translateY(-50px)';
-            break;
-        case 'down':
-            el.style.transform = 'translateY(50px)';
-            break;
-        case 'left':
-            el.style.transform = 'translateX(-50px)';
-            break;
-        case 'right':
-            el.style.transform = 'translateX(50px)';
-            break;
-    }
-
-    // Store direction in dataset for later
-    el.dataset.dir = dir;
-});
-
-// Intersection Observer to animate on scroll
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const el = entry.target;
-            el.style.opacity = '1';
-            el.style.transform = 'translateX(0) translateY(0)';
-            observer.unobserve(el); // Animate only once
-        }
-    });
-}, { threshold: 0.2 });
-
-elements.forEach(el => observer.observe(el));
-
-    </script>
 
     <!-- 2️⃣ Admissions Open Banner -->
     <section class="admissions-banner" id="admission">
-        <div class="container">
-            <div class="banner-content">
-                <div class="banner-text">
-                    <h3><i class="fas fa-bell"></i> Limited Seats for 2026-27 Session</h3>
-                    <p>Early admission offers 20% discount on registration fee. Apply before December 31, 2025.</p>
-                </div>
-                <div class="banner-btns">
-                    <a href="#" class="btn btn-primary">
-                        <i class="fas fa-file-alt"></i>
-                        Apply Online Now
-                    </a>
-                    <a href="#" class="btn btn-outline">
-                        <i class="fas fa-download"></i>
-                        Download Prospectus
-                    </a>
-                </div>
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h3><i class="fas fa-bell"></i> Enroll for the 2026-27 Academic Session</h3>
+                <p>Secure your child’s place at Pakistan’s premier educational institution. Early applicants enjoy a 20% registration fee discount – apply before December 31, 2025.</p>
+            </div>
+            <div class="banner-btns">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    Call Now
+                </a>
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Download Prospectus
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- 3️⃣ Trust & Accreditation -->
     <section class="trust">
@@ -208,104 +151,230 @@ elements.forEach(el => observer.observe(el));
 
 
     <!-- 4️⃣ Why Choose Us -->
-    <section class="why-us">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Parents Choose The Innovators</h2>
-                <div class="section-subtitle">Key differentiators that make us the preferred choice for quality education</div>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Safe & Secure Campus</h3>
-                    <p>24/7 security with CCTV surveillance, biometric access, and comprehensive child protection policies.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3>Highly Qualified Faculty</h3>
-                    <p>PhD and Master's degree holders with international teaching certifications and continuous training.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Technology Integration</h3>
-                    <p>Smart classrooms, robotics labs, coding workshops, and digital learning platforms for 21st century skills.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Holistic Development</h3>
-                    <p>Focus on academics, sports, arts, character building, and leadership for balanced growth.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>STEM Excellence</h3>
-                    <p>State-of-the-art laboratories for physics, chemistry, biology, and computer science with practical focus.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>University Placement</h3>
-                    <p>Dedicated career counseling and 100% university placement record with scholarship assistance.</p>
-                </div>
-            </div>
+    <section class="new-why-choose-us" id="new-why-choose-us-section">
+    <div class="new-why-choose-us-container">
+        <div class="new-why-choose-us-header">
+            <h2>Why Parents Choose The Innovators</h2>
+            <p>Discover the advantages that make us the first choice for world-class education</p>
         </div>
-    </section>
+        <div class="new-why-choose-us-grid">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.feature-card');
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Safe & Secure Campus</h3>
+                <p>24/7 surveillance, biometric access, and strict child protection policies ensure your child's safety.</p>
+            </div>
 
-    cards.forEach((card, index) => {
-        // Random direction: left, right, or bottom
-        const directions = ['left', 'right', 'bottom'];
-        const dir = directions[index % directions.length];
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Highly Qualified Faculty</h3>
+                <p>Experienced educators with global certifications and continuous professional development.</p>
+            </div>
 
-        // Set initial state
-        card.style.opacity = '0';
-        card.style.transition = 'all 0.8s ease-out';
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Technology Integration</h3>
+                <p>Smart classrooms, robotics labs, coding workshops, and digital platforms for 21st century skills.</p>
+            </div>
 
-        switch (dir) {
-            case 'left':
-                card.style.transform = 'translate(-50px, 50px)';
-                break;
-            case 'right':
-                card.style.transform = 'translate(50px, 50px)';
-                break;
-            case 'bottom':
-                card.style.transform = 'translateY(50px)';
-                break;
-        }
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Holistic Development</h3>
+                <p>Balanced growth through academics, sports, arts, leadership, and character building.</p>
+            </div>
 
-        // Increased stagger: 0.4s per card
-        card.style.transitionDelay = `${index * 0.4}s`;
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>STEM Excellence</h3>
+                <p>Cutting-edge labs in physics, chemistry, biology, and computer science with practical focus.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>University Placement</h3>
+                <p>Dedicated guidance with a 100% placement record and scholarship opportunities.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* Section */
+.new-why-choose-us {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.new-why-choose-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.new-why-choose-us-header h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative; /* needed for pseudo-element */
+}
+
+/* Gradient line below H2 */
+.new-why-choose-us-header h2::after {
+    content: '';
+    display: block;
+    width: 80px; /* length of the line */
+    height: 4px; /* thickness of the line */
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #e41f1c, #f6bc21); /* red to yellow gradient */
+}
+
+
+.new-why-choose-us-header p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+/* Grid */
+.new-why-choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.new-why-choose-us-card {
+    background-color: #111;
+    padding: 40px 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-top: 4px solid transparent;
+    transition: transform 0.4s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Animated Fill Background */
+.new-why-choose-us-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 0;
+    background-color: currentColor;
+    z-index: 0;
+    border-radius: 10px;
+    transition: height 0.6s ease;
+}
+
+.new-why-choose-us-card:hover::before {
+    height: 100%;
+}
+
+/* Icon, title, text above pseudo */
+.new-why-choose-us-card .new-why-choose-us-icon,
+.new-why-choose-us-card h3,
+.new-why-choose-us-card p {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+.new-why-choose-us-icon i{
+    font-size: xx-large;
+}
+
+/* Icon scaling */
+.new-why-choose-us-card:hover .new-why-choose-us-icon {
+    transform: scale(1.2);
+}
+
+/* Title */
+.new-why-choose-us-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Text */
+.new-why-choose-us-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Hover colors for text & icon based on card color */
+.new-why-choose-us-card[data-color="#f6bc21"]:hover h3,
+.new-why-choose-us-card[data-color="#f6bc21"]:hover p,
+.new-why-choose-us-card[data-color="#f6bc21"]:hover .new-why-choose-us-icon {
+    color: #000; /* black text & icon for yellow fill */
+}
+
+.new-why-choose-us-card[data-color="#e41f1c"]:hover h3,
+.new-why-choose-us-card[data-color="#e41f1c"]:hover p,
+.new-why-choose-us-card[data-color="#e41f1c"]:hover .new-why-choose-us-icon {
+    color: #fff; /* white text & icon for red fill */
+}
+@media(max-width:600px){
+    .new-why-choose-us-header h2 {
+    font-size: 35px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.new-why-choose-us-card');
+
+    // Set initial border color as currentColor
+    cards.forEach(card => {
+        const color = card.getAttribute('data-color');
+        card.style.borderTopColor = color;
+        card.style.color = color; // used by ::before for fill
     });
 
-    // Intersection Observer
+    // Scroll animation
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const el = entry.target;
-                el.style.opacity = '1';
-                el.style.transform = 'translate(0, 0)';
-                obs.unobserve(el); // animate only once
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.6s ease-out';
+                obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.2 });
+    }, {threshold: 0.2});
 
     cards.forEach(card => observer.observe(card));
 });
+</script>
 
-    </script>
 
     <!-- 5️⃣ About Our School -->
     <section class="about" id="about">
