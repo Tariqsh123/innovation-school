@@ -773,15 +773,27 @@
 }
 
 /* Programs Grid */
+.programs{
+    background: #000;
+    color: white;
+    padding: 20px;
+}
+.programs h2{
+    color: white;
+}
+.programs p{
+    color: white;
+}
 .programs-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+  padding-bottom: 80px;
 }
 
 /* Card */
 .program-card {
-  background-color: #fff;
+  background-color: #000;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   display: flex;
@@ -789,12 +801,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.program-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-/* Header */
 .program-header {
   padding: 20px 15px;
   border-radius: 20px 20px 0 0;
@@ -810,7 +816,7 @@
 
 .yellow-card .program-header {
   background-color: #F6BC21;
-  color: #000;
+  color: #fff;
 }
 
 /* Body */
@@ -829,12 +835,12 @@
 
 .red-card .program-body {
   border-color: #E41F1C;
-  color: #333;
+  color: white;
 }
 
 .yellow-card .program-body {
   border-color: #F6BC21;
-  color: #333;
+  color: white;
 }
 
 .program-body ul {
@@ -852,8 +858,8 @@
 /* Learn More Button */
 .learn-more-btn {
   padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-weight: 600;
   border-radius: 25px;
   text-decoration: none;
@@ -862,6 +868,7 @@
 
 .red-card .learn-more-btn:hover {
   background-color: #E41F1C;
+  color: white;
 }
 
 .yellow-card .learn-more-btn:hover {
@@ -926,7 +933,7 @@
         /* Academic Excellence */
        /* Section */
 .academic-excellence {
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: linear-gradient(180deg, #f9f9f9, #ffffff);
   font-family: 'Poppins', sans-serif;
 }
@@ -978,13 +985,13 @@
   border-radius: 24px;
   padding: 35px 20px;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 40px rgb(182, 182, 182);
   transition: transform .4s ease, box-shadow .4s ease;
 }
 
 .excellence-card:hover {
+  box-shadow: 0 15px 40px rgb(182, 182, 182,0.7);
   transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 }
 
 /* Ring */
