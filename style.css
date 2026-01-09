@@ -1628,7 +1628,6 @@ textarea.form-input {
   font-weight: 900;
   letter-spacing: 1px;
   color: rgb(246, 188, 33);
-  -webkit-text-stroke: 1px white;
   animation: fadeUp 1s 0.2s ease forwards;
   opacity: 0;
 }
