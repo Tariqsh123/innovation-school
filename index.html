@@ -598,58 +598,52 @@ elements.forEach(el => observer.observe(el));
     <!-- New: Academic Excellence -->
    <section class="academic-excellence">
   <div class="container">
-    <div class="section-title">
+    <div class="section-header">
+      <span class="tag">Our Results</span>
       <h2>Academic Excellence</h2>
-      <p class="section-subtitle">Celebrating outstanding achievements and recognition</p>
+      <p>Proven outcomes that reflect our commitment to quality education</p>
     </div>
 
-    <div class="excellence-cards">
-      <!-- Card 1 -->
-      <div class="excellence-card red">
-        <svg class="progress-ring" width="150" height="150">
-          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
-          <circle class="progress-ring__circle" stroke="#e41f1c" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+    <div class="excellence-grid">
+
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
         </svg>
-        <div class="counter-text">
-          <h3 class="counter" data-target="95">0</h3><span class="symbol">%</span>
-        </div>
-        <p>Board Exam Success Rate (2024)</p>
+        <div class="value"><span class="counter" data-target="95">0</span>%</div>
+        <h4>Board Exam Success</h4>
+        <span class="year">2024 Results</span>
       </div>
 
-      <!-- Card 2 -->
-      <div class="excellence-card yellow">
-        <svg class="progress-ring" width="150" height="150">
-          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
-          <circle class="progress-ring__circle" stroke="#f8b909" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
         </svg>
-        <div class="counter-text">
-          <h3 class="counter" data-target="55">0</h3><span class="symbol">+</span>
-        </div>
-        <p>National Awards & Recognitions</p>
+        <div class="value"><span class="counter" data-target="55">0</span>+</div>
+        <h4>National Awards</h4>
+        <span class="year">Across Academics</span>
       </div>
 
-      <!-- Card 3 -->
-      <div class="excellence-card red">
-        <svg class="progress-ring" width="150" height="150">
-          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
-          <circle class="progress-ring__circle" stroke="#e41f1c" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
         </svg>
-        <div class="counter-text">
-          <h3 class="counter" data-target="80">0</h3><span class="symbol">+</span>
-        </div>
-        <p>University Scholarships to Alumni</p>
+        <div class="value"><span class="counter" data-target="80">0</span>+</div>
+        <h4>University Scholarships</h4>
+        <span class="year">Alumni Achievements</span>
       </div>
 
-      <!-- Card 4 -->
-      <div class="excellence-card yellow">
-        <svg class="progress-ring" width="150" height="150">
-          <circle class="progress-ring__bg" stroke="gray" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
-          <circle class="progress-ring__circle" stroke="#f8b909" stroke-width="12" fill="transparent" r="65" cx="75" cy="75"/>
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
         </svg>
-        <div class="counter-text">
-          <h3 class="counter" data-target="67">0</h3><span class="symbol">+</span>
-        </div>
-        <p>International Competition Awards</p>
+        <div class="value"><span class="counter" data-target="67">0</span>+</div>
+        <h4>International Awards</h4>
+        <span class="year">Global Platforms</span>
       </div>
 
     </div>
@@ -657,49 +651,40 @@ elements.forEach(el => observer.observe(el));
 </section>
 
 <script>
-// Animated counter + progress
-const counters = document.querySelectorAll('.counter');
-const circles = document.querySelectorAll('.progress-ring__circle');
+const cards = document.querySelectorAll('.excellence-card');
 
-const speed = 200;
+const animateStats = () => {
+  cards.forEach(card => {
+    const counter = card.querySelector('.counter');
+    const circle = card.querySelector('.ring-progress');
 
-const isInViewport = elem => {
-  const rect = elem.getBoundingClientRect();
-  return rect.top <= window.innerHeight && rect.bottom >= 0;
-};
+    if (card.getBoundingClientRect().top < window.innerHeight - 100 && !card.classList.contains('active')) {
+      card.classList.add('active');
 
-const runCounters = () => {
-  counters.forEach((counter, idx) => {
-    if (!counter.classList.contains('counted') && isInViewport(counter)) {
-      counter.classList.add('counted');
-
-      const target = +counter.getAttribute('data-target');
-
-      // Animate number
+      const target = +counter.dataset.target;
       let count = 0;
-      const updateCount = () => {
+
+      const update = () => {
         if (count < target) {
-          count += Math.ceil(target / speed);
+          count += Math.ceil(target / 60);
           if (count > target) count = target;
           counter.innerText = count;
-          requestAnimationFrame(updateCount);
+          requestAnimationFrame(update);
         }
       };
-      updateCount();
+      update();
 
-      // Animate circle progress
-      const circle = circles[idx];
-      const radius = circle.r.baseVal.value;
+      const radius = 70;
       const circumference = 2 * Math.PI * radius;
-      const offset = circumference - (target / 100) * circumference;
-      circle.style.strokeDashoffset = offset;
+      circle.style.strokeDashoffset = circumference - (target / 100) * circumference;
     }
   });
 };
 
-window.addEventListener('scroll', runCounters);
-window.addEventListener('load', runCounters);
+window.addEventListener('scroll', animateStats);
+window.addEventListener('load', animateStats);
 </script>
+
 
     <!-- New: International Programs -->
     
@@ -845,46 +830,65 @@ window.addEventListener('load', runCounters);
 
     <script>
         // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navItems = document.getElementById('navItems');
-        
-        menuToggle.addEventListener('click', () => {
-            navItems.classList.toggle('active');
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
             const icon = menuToggle.querySelector('i');
-            if (navItems.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-                document.body.style.overflow = 'hidden';
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = 'auto';
-            }
-        });
-        
-        // Close mobile menu when clicking a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 992) {
-                    navItems.classList.remove('active');
-                    const icon = menuToggle.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
         
         // Tab functionality for international programs
         const programTabs = document.querySelectorAll('.program-tab');
