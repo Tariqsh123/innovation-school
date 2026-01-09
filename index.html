@@ -71,7 +71,7 @@
         <i class="fas fa-user-graduate"></i>
         Admissions Open 2026
       </a>
-      <a href="#" class="btn btn-outline">
+      <a href="#" class="btn btn-outline" id="book-tour-btn">
         <i class="fas fa-calendar-alt"></i>
         Book Campus Tour
       </a>
@@ -79,6 +79,45 @@
   </div>
 </section>
 
+<!-- Campus Tour Overlay -->
+<div id="campus-tour-overlay" class="campus-tour-overlay">
+  <div class="campus-tour-wrapper">
+    <button id="close-tour-btn" class="close-tour-btn">&times;</button>
+    <video id="campus-tour-video" autoplay muted controls playsinline>
+      <source src="video/campus-tour.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<script>
+    const tourBtn = document.getElementById('book-tour-btn');
+const overlay = document.getElementById('campus-tour-overlay');
+const closeBtn = document.getElementById('close-tour-btn');
+const campusVideo = document.getElementById('campus-tour-video');
+
+// Open overlay and play video
+tourBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  overlay.style.display = 'flex';
+  campusVideo.currentTime = 0;
+  campusVideo.play();
+});
+
+// Close overlay and pause video
+closeBtn.addEventListener('click', () => {
+  campusVideo.pause();
+  overlay.style.display = 'none';
+});
+
+// Close overlay if clicking outside video
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {
+    campusVideo.pause();
+    overlay.style.display = 'none';
+  }
+});
+
+</script>
 
     <!-- 2️⃣ Admissions Open Banner -->
     <section class="admissions-banner" id="admission">
