@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Innovators Schooling System | Premier Education Since 2008</title>
+    <title>About Us | The Innovators Schooling System</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -47,146 +47,277 @@
 
 
     <!-- NEw  -->
-     <!-- Hero Section -->
-<section id="new-hero-section" class="new-hero-section">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline id="new-hero-video" class="new-hero-video">
-    <source src="video/home-hero-bg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <!-- Overlay -->
-  <div class="new-hero-overlay"></div>
+    <!-- Hero-->
+     <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
 
-  <!-- Content -->
-  <div class="new-hero-content">
-    <h1 class="new-hero-title">The Innovators Schooling System</h1>
-    <h2 class="new-hero-subtitle">Shaping Future Leaders Through Excellence</h2>
-    <p class="new-hero-text">
-      Pakistan's premier educational institution offering world-class learning from Playgroup to Cambridge O-Levels. Where tradition meets innovation to create leaders of tomorrow.
-    </p>
-    <div class="hero-btns">
-      <a href="#" class="btn btn-primary">
-        <i class="fas fa-user-graduate"></i>
-        Admissions Open 2026
-      </a>
-      <a href="#" class="btn btn-outline" id="book-tour-btn">
-        <i class="fas fa-calendar-alt"></i>
-        Book Campus Tour
-      </a>
+    <div class="about-hero-content">
+        <h1 id="about-hero-title">About The Innovation Schooling System</h1>
+<p id="about-hero-para">
+    At The Innovation Schooling System, we are dedicated to nurturing future leaders through world-class education. Our curriculum blends innovation with tradition, empowering students to excel academically, creatively, and socially in a rapidly changing world.
+</p>
+
+        <div class="about-hero-buttons">
+            <a href="#contact" class="about-hero-btn about-hero-btn-red">Contact Us</a>
+            <a href="#facilities" class="about-hero-btn about-hero-btn-yellow">View Gallery</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+ <!-- New: Academic Excellence -->
+   <section class="academic-excellence">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Our Results</span>
+      <h2>Academic Excellence</h2>
+      <p>Proven outcomes that reflect our commitment to quality education</p>
+    </div>
+
+    <div class="excellence-grid">
+
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
+        </svg>
+        <div class="value"><span class="counter" data-target="100">0</span>%</div>
+        <h4>Board Exam Success</h4>
+        <span class="year">2024 Results</span>
+      </div>
+
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
+        </svg>
+        <div class="value"><span class="counter" data-target="55">0</span>+</div>
+        <h4>National Awards</h4>
+        <span class="year">Across Academics</span>
+      </div>
+
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
+        </svg>
+        <div class="value"><span class="counter" data-target="80">0</span>+</div>
+        <h4>University Scholarships</h4>
+        <span class="year">Alumni Achievements</span>
+      </div>
+
+      <div class="excellence-card">
+        <svg class="progress-ring" width="160" height="160">
+          <circle class="ring-bg" r="70" cx="80" cy="80"/>
+          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
+        </svg>
+        <div class="value"><span class="counter" data-target="67">0</span>+</div>
+        <h4>International Awards</h4>
+        <span class="year">Global Platforms</span>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Campus Tour Overlay -->
-<div id="campus-tour-overlay" class="campus-tour-overlay">
-  <div class="campus-tour-wrapper">
-    <button id="close-tour-btn" class="close-tour-btn">&times;</button>
-    <video id="campus-tour-video" autoplay muted controls playsinline>
-      <source src="video/campus-tour.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
 <script>
-    const tourBtn = document.getElementById('book-tour-btn');
-const overlay = document.getElementById('campus-tour-overlay');
-const closeBtn = document.getElementById('close-tour-btn');
-const campusVideo = document.getElementById('campus-tour-video');
+const cards = document.querySelectorAll('.excellence-card');
 
-// Open overlay and play video
-tourBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  overlay.style.display = 'flex';
-  campusVideo.currentTime = 0;
-  campusVideo.play();
-});
+const animateStats = () => {
+  cards.forEach(card => {
+    const counter = card.querySelector('.counter');
+    const circle = card.querySelector('.ring-progress');
 
-// Close overlay and pause video
-closeBtn.addEventListener('click', () => {
-  campusVideo.pause();
-  overlay.style.display = 'none';
-});
+    if (card.getBoundingClientRect().top < window.innerHeight - 100 && !card.classList.contains('active')) {
+      card.classList.add('active');
 
-// Close overlay if clicking outside video
-overlay.addEventListener('click', (e) => {
-  if (e.target === overlay) {
-    campusVideo.pause();
-    overlay.style.display = 'none';
-  }
-});
+      const target = +counter.dataset.target;
+      let count = 0;
 
+      const update = () => {
+        if (count < target) {
+          count += Math.ceil(target / 60);
+          if (count > target) count = target;
+          counter.innerText = count;
+          requestAnimationFrame(update);
+        }
+      };
+      update();
+
+      const radius = 70;
+      const circumference = 2 * Math.PI * radius;
+      circle.style.strokeDashoffset = circumference - (target / 100) * circumference;
+    }
+  });
+};
+
+window.addEventListener('scroll', animateStats);
+window.addEventListener('load', animateStats);
 </script>
 
-    <!-- 2️⃣ Admissions Open Banner -->
-    <section class="admissions-banner" id="admission">
-    <div class="container">
-        <div class="banner-content">
-            <div class="banner-text">
-                <h3><i class="fas fa-bell"></i> Enroll for the 2026-27 Academic Session</h3>
-                <p>Secure your child’s place at Pakistan’s premier educational institution. Early applicants enjoy a 20% registration fee discount – apply before December 31, 2025.</p>
-            </div>
-            <div class="banner-btns">
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-file-alt"></i>
-                    Call Now
-                </a>
-                <a href="#" class="btn btn-outline">
-                    <i class="fas fa-download"></i>
-                    Download Prospectus
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
+    <!-- 5️⃣ About Our School -->
+    <section class="about-wow" id="about">
+  <div class="container">
+    <div class="about-wrapper">
+      <!-- Left: Image -->
+      <div class="about-image">
+        <img src="https://t4.ftcdn.net/jpg/00/88/68/17/360_F_88681735_DGekSlvZg1keWVRNtDinXmwERnJwokEs.jpg" alt="Innovators School Campus">
+      </div>
 
-    <!-- 3️⃣ Trust & Accreditation -->
-    <section class="trust">
-    <div class="container">
-        <div class="section-title">
-            <h2>Trusted & Accredited</h2>
-            <div class="section-subtitle">
-                Recognized by leading educational bodies and accredited for excellence
-            </div>
-        </div>
-        <div class="trust-logos">
-            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
-            <img class="trust-logo" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
-            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
-            <img class="trust-logo" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
-            <img class="trust-logo" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
-        </div>
+      <!-- Right: Text -->
+      <div class="about-text">
+    <h2 class="wow-title">
+        Shaping Future Leaders
+        <span class="underline"></span>
+    </h2>
+    <p class="wow-subtitle">
+        The Innovation Schooling System combines academic excellence with creativity, character development, and global awareness. We empower students to think critically, solve problems, and lead with integrity in a dynamic world.
+    </p>
+    <a href="#admissions" class="btn-gradient">Join Our Journey</a>
+</div>
+
     </div>
+  </div>
 </section>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const logos = document.querySelectorAll('.trust-logo');
+  const elements = document.querySelectorAll('.wow-title, .wow-subtitle, .btn-gradient');
 
-    // Set initial state for all logos
-    logos.forEach((logo, index) => {
-        logo.style.opacity = '0';
-        logo.style.transform = 'translateY(50px)';
-        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+        obs.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.3 });
 
-    // Intersection Observer
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const el = entry.target;
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-                observer.unobserve(el); // animate once
-            }
-        });
-    }, { threshold: 0.2 });
-
-    // Observe each logo
-    logos.forEach(logo => observer.observe(logo));
+  elements.forEach(el => {
+    observer.observe(el);
+  });
 });
 
 </script>
+
 
 
     <!-- 4️⃣ Why Choose Us -->
@@ -278,54 +409,11 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-    <!-- 5️⃣ About Our School -->
-    <section class="about-wow" id="about">
-  <div class="container">
-    <div class="about-wrapper">
-      <!-- Left: Image -->
-      <div class="about-image">
-        <img src="images/about-us.jpg" alt="Innovators School Campus">
-      </div>
-
-      <!-- Right: Text -->
-      <div class="about-text">
-        <h2 class="wow-title">
-          Building Future Innovators Since 2008
-          <span class="underline"></span>
-        </h2>
-        <p class="wow-subtitle">
-          The Innovators Schooling System merges academic excellence with innovation, character development, and global citizenship. We nurture students to become critical thinkers, problem-solvers, and ethical leaders.
-        </p>
-        <a href="#admissions" class="btn-gradient">Join Our Journey</a>
-      </div>
-    </div>
-  </div>
-</section>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.wow-title, .wow-subtitle, .btn-gradient');
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = 'translateY(0)';
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  elements.forEach(el => {
-    observer.observe(el);
-  });
-});
-
-</script>
     <!-- 6️⃣ Vision & Mission -->
    <section class="vision-mission-modern">
   <div class="container">
     <div class="section-header">
-      <h2>Our Vision & Mission</h2>
+      <h2>Our Vision, Mission & Responsibility</h2>
       <div class="gradient-line"></div>
       <p class="section-subtitle">
         Guiding principles that define our educational philosophy and drive impactful learning experiences.
@@ -333,36 +421,36 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div class="vm-cards-layout">
-      <!-- Left Yellow Card -->
+      <!-- Vision Card -->
       <div class="vm-card card-yellow">
-        <div class="icon-wrapper">
-          <i class="fas fa-book-open"></i>
-        </div>
-        <h3>Our Mission</h3>
-        <p>
-          Delivering a transformative learning experience combining academic excellence, leadership, technological fluency, and creativity.
-        </p>
-      </div>
-
-      <!-- Center Red Card -->
-      <div class="vm-card card-red center-card">
         <div class="icon-wrapper">
           <i class="fas fa-eye"></i>
         </div>
-        <h3>Our Vision</h3>
+        <h3>Vision</h3>
         <p>
-          To be Pakistan's premier institution for innovative education, nurturing globally competitive leaders with strong ethical foundations.
+          The School's vision is expressed in our strategic plan, which is based on the premise that excellence comes when each student achieves his best in both the curricular and co-curricular environments. The School believes this goal can best be realized within a supportive and stimulating educational environment that includes state-of-the-art education facilities and resources.
         </p>
       </div>
 
-      <!-- Right Yellow Card -->
+      <!-- Mission Card -->
+      <div class="vm-card card-red">
+        <div class="icon-wrapper">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Mission</h3>
+        <p>
+          To be an exemplary school developing wisdom, integrity, compassion & faith, and nurturing students with a sure knowledge of who they are and how they should be.
+        </p>
+      </div>
+
+      <!-- Responsibility Card -->
       <div class="vm-card card-yellow">
         <div class="icon-wrapper">
           <i class="fas fa-lightbulb"></i>
         </div>
-        <h3>Our Values</h3>
+        <h3>Responsibility</h3>
         <p>
-          Integrity, empathy, resilience, and community service guide everything we do to create ethical, innovative leaders.
+          Educating the whole person for the challenges of a changing world.
         </p>
       </div>
     </div>
@@ -371,148 +459,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    <!-- 7️⃣ Programs & Classes -->
-   <section class="programs" id="programs">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Programs</h2>
-      <p class="section-subtitle">
-        Explore our carefully designed programs for holistic student development with detailed learning objectives.
-      </p>
-    </div>
 
-    <div class="programs-container">
-
-      <!-- CLP Chinese Language Program (Red) -->
-      <div class="program-card red-card">
-        <div class="program-header">
-          <h3>CLP Chinese Language Program</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Collaboration with Tang International Education China</li>
-            <li>Target Age/Grade: Grade 1 – Grade 8</li>
-            <li>Full Academic Year Program</li>
-            <li>Chinese Language Proficiency</li>
-            <li>Cultural Awareness & Understanding</li>
-            <li>Communication & Conversation Skills</li>
-            <li>Interactive Classroom & Online Modules</li>
-            <li>Cross-cultural Projects & Activities</li>
-            <li>Language Competency Assessment & Certification</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-      <!-- AI Powered School (Red) -->
-      <div class="program-card yellow-card">
-        <div class="program-header">
-          <h3>AI Powered School</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Target Age/Grade: Grade 6 – Grade 12</li>
-            <li>Full Academic Year Program</li>
-            <li>Introduction to Artificial Intelligence</li>
-            <li>Coding & Computational Thinking</li>
-            <li>Data Analytics & Machine Learning Basics</li>
-            <li>Problem-solving with AI Tools</li>
-            <li>Hands-on AI Projects</li>
-            <li>Digital Ethics & Responsibility</li>
-            <li>Practical Assessments & Certification</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-      <!-- Agripreneurship (Yellow) -->
-      <div class="program-card red-card">
-        <div class="program-header">
-          <h3>Agripreneurship</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Target Age/Grade: Grade 8 – Grade 12</li>
-            <li>Semester / Year-long Projects</li>
-            <li>Agriculture Practices & Techniques</li>
-            <li>Innovation & Business Planning</li>
-            <li>Sustainable Farming Methods</li>
-            <li>Market Analysis & Strategy</li>
-            <li>Hands-on Field Projects</li>
-            <li>Entrepreneurial Skill Development</li>
-            <li>Presentation & Business Reporting</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-      <!-- Environmental Sustainability Programs (Red) -->
-      <div class="program-card yellow-card">
-        <div class="program-header">
-          <h3>Environmental Sustainability Programs</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Target Age/Grade: Grade 6 – Grade 12</li>
-            <li>6-12 Month Duration</li>
-            <li>Environmental Awareness & Education</li>
-            <li>Research on Sustainable Practices</li>
-            <li>Eco-friendly School & Community Projects</li>
-            <li>Hands-on Field Work & Experiments</li>
-            <li>Recycling & Resource Management Skills</li>
-            <li>Teamwork & Community Engagement</li>
-            <li>Assessment & Certification in Sustainability</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-      <!-- Industrial Relations Development Cell (Yellow) -->
-      <div class="program-card red-card">
-        <div class="program-header">
-          <h3>Industrial Relations Development Cell</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Target Age/Grade: Grade 9 – Grade 12</li>
-            <li>Semester-based Program</li>
-            <li>Leadership Development</li>
-            <li>Workplace Communication Skills</li>
-            <li>Negotiation & Conflict Resolution</li>
-            <li>Project Management</li>
-            <li>Team Collaboration & Coordination</li>
-            <li>Problem-solving & Decision-making Skills</li>
-            <li>Career Readiness & Mentorship</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-      <!-- Research & Leadership (Red) -->
-      <div class="program-card yellow-card">
-        <div class="program-header">
-          <h3>Research & Leadership</h3>
-        </div>
-        <div class="program-body">
-          <ul>
-            <li>Target Age/Grade: Grade 9 – Grade 12</li>
-            <li>Year-long Program</li>
-            <li>Critical Thinking Skills</li>
-            <li>Leadership Development & Teamwork</li>
-            <li>Research Methodology & Project Planning</li>
-            <li>Data Analysis & Interpretation</li>
-            <li>Presentation & Reporting Skills</li>
-            <li>Problem-solving & Decision-making Skills</li>
-            <li>Independent Research Projects with Mentorship</li>
-          </ul>
-          <a href="#" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    
 
     <!-- New: Campus Gallery -->
     <section class="gallery" id="facilities">
@@ -578,161 +526,12 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-    <!-- New: Academic Excellence -->
-   <section class="academic-excellence">
-  <div class="container">
-    <div class="section-header">
-      <span class="tag">Our Results</span>
-      <h2>Academic Excellence</h2>
-      <p>Proven outcomes that reflect our commitment to quality education</p>
-    </div>
-
-    <div class="excellence-grid">
-
-      <div class="excellence-card">
-        <svg class="progress-ring" width="160" height="160">
-          <circle class="ring-bg" r="70" cx="80" cy="80"/>
-          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
-        </svg>
-        <div class="value"><span class="counter" data-target="100">0</span>%</div>
-        <h4>Board Exam Success</h4>
-        <span class="year">2024 Results</span>
-      </div>
-
-      <div class="excellence-card">
-        <svg class="progress-ring" width="160" height="160">
-          <circle class="ring-bg" r="70" cx="80" cy="80"/>
-          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
-        </svg>
-        <div class="value"><span class="counter" data-target="55">0</span>+</div>
-        <h4>National Awards</h4>
-        <span class="year">Across Academics</span>
-      </div>
-
-      <div class="excellence-card">
-        <svg class="progress-ring" width="160" height="160">
-          <circle class="ring-bg" r="70" cx="80" cy="80"/>
-          <circle class="ring-progress red" r="70" cx="80" cy="80"/>
-        </svg>
-        <div class="value"><span class="counter" data-target="80">0</span>+</div>
-        <h4>University Scholarships</h4>
-        <span class="year">Alumni Achievements</span>
-      </div>
-
-      <div class="excellence-card">
-        <svg class="progress-ring" width="160" height="160">
-          <circle class="ring-bg" r="70" cx="80" cy="80"/>
-          <circle class="ring-progress gold" r="70" cx="80" cy="80"/>
-        </svg>
-        <div class="value"><span class="counter" data-target="67">0</span>+</div>
-        <h4>International Awards</h4>
-        <span class="year">Global Platforms</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-const cards = document.querySelectorAll('.excellence-card');
-
-const animateStats = () => {
-  cards.forEach(card => {
-    const counter = card.querySelector('.counter');
-    const circle = card.querySelector('.ring-progress');
-
-    if (card.getBoundingClientRect().top < window.innerHeight - 100 && !card.classList.contains('active')) {
-      card.classList.add('active');
-
-      const target = +counter.dataset.target;
-      let count = 0;
-
-      const update = () => {
-        if (count < target) {
-          count += Math.ceil(target / 60);
-          if (count > target) count = target;
-          counter.innerText = count;
-          requestAnimationFrame(update);
-        }
-      };
-      update();
-
-      const radius = 70;
-      const circumference = 2 * Math.PI * radius;
-      circle.style.strokeDashoffset = circumference - (target / 100) * circumference;
-    }
-  });
-};
-
-window.addEventListener('scroll', animateStats);
-window.addEventListener('load', animateStats);
-</script>
+   
 
 
     <!-- New: International Programs -->
     
 
-    <!-- New: Upcoming Events -->
-    <section class="form-section">
-  <div class="form-container-main">
-    <div class="form-section-title">
-      <h2>Reach Out</h2>
-      <div class="form-title-line"></div>
-      <p class="form-section-subtitle">Fill out the form below to get in touch or register for our programs.</p>
-    </div>
-
-    <div class="form-image-wrapper">
-      <!-- Form Box -->
-      <div class="form-left">
-        <form class="form-main" action="#" method="post">
-          
-          <!-- First + Last Name Row -->
-          <div class="form-row">
-            <div class="form-group">
-              <input class="form-input" type="text" name="first_name" required placeholder=" ">
-              <label class="form-label">First Name</label>
-            </div>
-            <div class="form-group">
-              <input class="form-input" type="text" name="last_name" required placeholder=" ">
-              <label class="form-label">Last Name</label>
-            </div>
-          </div>
-
-          <!-- Email Row -->
-          <div class="form-row">
-            <div class="form-group full-width">
-              <input class="form-input" type="email" name="email" required placeholder=" ">
-              <label class="form-label">Email</label>
-            </div>
-          </div>
-
-          <!-- Phone Row -->
-          <div class="form-row">
-            <div class="form-group full-width">
-              <input class="form-input" type="tel" name="phone" required placeholder=" ">
-              <label class="form-label">Phone</label>
-            </div>
-          </div>
-
-          <!-- Details Row -->
-          <div class="form-row">
-            <div class="form-group full-width">
-              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
-              <label class="form-label">Details / Message</label>
-            </div>
-          </div>
-
-          <button class="form-submit" type="submit">Submit</button>
-        </form>
-      </div>
-
-      <!-- Image on Right -->
-      <div class="form-right">
-        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="School Image">
-      </div>
-    </div>
-  </div>
-</section>
 
     <!-- Footer -->
     <footer class="footer" id="contact">

@@ -628,6 +628,7 @@
 .vision-mission-modern {
   background-color: #000;
   padding: 60px 20px;
+  padding-top: 0;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -777,6 +778,7 @@
     background: #000;
     color: white;
     padding: 20px;
+    padding-bottom: 50px;
 }
 .programs h2{
     color: white;
@@ -854,7 +856,6 @@
 
 .program-body ul {
     list-style: none;
-  padding-left: 20px;
 
 }
 
@@ -895,25 +896,35 @@
         .gallery {
             background-color: var(--secondary-light);
         }
+        .gallery .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
 
         .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+          height: fit-content;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
         }
 
         .gallery-item {
             border-radius: var(--border-radius);
             overflow: hidden;
             height: 250px;
+            width: 320px;
             position: relative;
             box-shadow: var(--shadow);
             transition: var(--transition);
         }
 
         .gallery-item:hover {
-            transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
 
@@ -927,22 +938,52 @@
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+/* Lightbox Overlay */
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-            color: var(--primary-light);
-            padding: 20px;
-            transform: translateY(100%);
-            transition: transform 0.5s ease;
-        }
+#lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
 
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
+#lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#lightbox-close:hover {
+    color: #ff4081;
+}
+.gallery .container a{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px ;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--primary-red), var(--primary-yellow));
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
 
         /* Academic Excellence */
        /* Section */
@@ -1290,7 +1331,7 @@ textarea.form-input {
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 60px;
+            gap: 20px;
             margin-bottom: 70px;
         }
 
