@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | The Innovators Schooling System</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- NEw  -->
+
+    <!-- Hero-->
+     <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+        <h1 id="about-hero-title">About The Innovation Schooling System</h1>
+<p id="about-hero-para">
+    At The Innovation Schooling System, we are dedicated to nurturing future leaders through world-class education. Our curriculum blends innovation with tradition, empowering students to excel academically, creatively, and socially in a rapidly changing world.
+</p>
+
+        <div class="about-hero-buttons">
+            <a href="facilities.html" title="Facilities" class="about-hero-btn about-hero-btn-red">Facilities</a>
+            <a href="tel:+92062223585" title="Call Now" class="about-hero-btn about-hero-btn-yellow">Call Now</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+
+
+   <!-- 2️⃣ Admissions Open Banner -->
+    <section class="admissions-banner" id="admission">
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h3><i class="fas fa-bell"></i> Enroll for the 2026-27 Academic Session</h3>
+                <p>Secure your child’s place at Pakistan’s premier educational institution. Early applicants enjoy a 20% registration fee discount – apply before December 31, 2025.</p>
+            </div>
+            <div class="banner-btns">
+                <a title="Call Now" href="tel:+92062223585" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    Call Now
+                </a>
+                <a title="Facilities" href="facilities.html" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Facilities
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 3️⃣ Trust & Accreditation -->
+    <section class="trust">
+    <div class="container">
+        <div class="section-title">
+            <h2>Trusted & Accredited</h2>
+            <div class="section-subtitle">
+                Recognized by leading educational bodies and accredited for excellence
+            </div>
+        </div>
+        <div class="trust-logos">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const logos = document.querySelectorAll('.trust-logo');
+
+    // Set initial state for all logos
+    logos.forEach((logo, index) => {
+        logo.style.opacity = '0';
+        logo.style.transform = 'translateY(50px)';
+        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                observer.unobserve(el); // animate once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    // Observe each logo
+    logos.forEach(logo => observer.observe(logo));
+});
+
+</script>
+
+
+
+<!-- 5️⃣ About Our School -->
+    <section class="about-wow" id="about">
+  <div class="container">
+    <div class="about-wrapper">
+      <!-- Left: Image -->
+      <div class="about-image">
+        <img src="images/logo.png" alt="About Us Image" title="About Us Image" loading="lazy">
+      </div>
+
+      <!-- Right: Text -->
+      <div class="about-text">
+        <h2 class="wow-title">
+          Empowering Young Minds for a Tech-Driven Future
+          <span class="underline"></span>
+        </h2>
+        <p class="wow-subtitle">
+          At The Innovators Schooling System, we combine cutting-edge technology education with creativity, critical thinking, and leadership skills. Our mission is to equip students with the knowledge and mindset to excel in AI, robotics, and future-focused innovation.
+        </p>
+        <a href="about.html" class="btn-gradient" title="About Us">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.wow-title, .wow-subtitle, .btn-gradient');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+});
+
+</script>
+
+
+
+<!-- About Chairman -->
+ <section id="about-chairman" class="about-chairman-section">
+  <div class="about-chairman-container about-chairman-layout">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-chairman-content">
+
+      <h2 class="about-chairman-title">About the Chairman</h2>
+      <h3 class="about-chairman-name">Prof. Nadeem Ahmed Faraz</h3>
+      <p class="about-chairman-tagline">Visionary Educationist | Research Leader | Strategist | Nation Builder</p>
+
+      <p class="about-chairman-text">
+        Prof. Nadeem Ahmed Faraz is a distinguished educationist, researcher, strategist, and transformational leader with over 23 years of dedicated service to children, youth, and professionals across Pakistan. His lifelong mission is centered on human capital development, research excellence, leadership cultivation, and economic transformation. Over the course of his career, he has educated, trained, mentored, and empowered more than 50,000 students and professionals, enabling them to become productive contributors to society and the national economy.
+      </p>
+
+      <h3 class="about-chairman-subtitle">Academic Leadership & Curriculum Development</h3>
+      <p class="about-chairman-text">
+        Prof. Nadeem Ahmed Faraz has made significant national-level contributions to curriculum development, aligning academic programs with global standards and industry needs:
+      </p>
+      <ul class="about-chairman-list">
+        <li>BS & MBA in Aviation Management – Affiliated with Karachi University Business School (KUBS)</li>
+        <li>BS & MBA in Tourism & Hospitality Sciences – Head of Curriculum Development, Affiliated with Federal Urdu University</li>
+      </ul>
+
+      <h3 class="about-chairman-subtitle">Founder of Transformational Institutions</h3>
+      <ul class="about-chairman-list">
+        <li><strong>PERTC – Pakistan Economic Research & Training Centre (2015)</strong>: Established to embed research culture among youth, deliver modern corporate and policy-driven training, and support economic research, strategy, and national development initiatives.</li>
+        <li><strong>PYEC – Pakistan Young Entrepreneurs Club (2022)</strong>: Introduced Kidspreurship at school level, cultivating an entrepreneurial mindset, and preparing students to become job creators, innovators, and future business leaders.</li>
+      </ul>
+
+      <h3 class="about-chairman-subtitle">Policy, Research & National / International Engagements</h3>
+      <ul class="about-chairman-list">
+        <li>Head – Training & Policy Development, YCCP (Youth Chamber of Commerce Pakistan)</li>
+        <li>Convener – Research & Initiatives Committee, PAEC (Pakistan Africa Economic Council)</li>
+        <li>Active contributor to public and private sector strategy, policy formulation, leadership training, and economic initiatives both nationally and internationally</li>
+      </ul>
+
+      <h3 class="about-chairman-subtitle">Former Key Managerial Positions</h3>
+      <ul class="about-chairman-list">
+        <li>Dean & Director, CMATHS College of Management in Aviation, Tourism & Hospitality Sciences</li>
+        <li>Director, IBAAS Institute of Business Administration & Aviation Sciences</li>
+        <li>Managing Director, Academy of Aviation Excellence – Star Air</li>
+        <li>Academic & Business Head, Adamson Institute of Business Administration & Technology</li>
+        <li>Academic Head, University College (Affiliated with Karachi University Business School)</li>
+        <li>Academic Head, COMS College of Management Sciences (Affiliated with KUBS)</li>
+        <li>Academic Head, IMCS Institute of Management & Computer Sciences (Affiliated with KUBS)</li>
+        <li>Director, Grace Professional Institute & Technology</li>
+      </ul>
+
+      <h3 class="about-chairman-subtitle">Current Engagements</h3>
+      <ul class="about-chairman-list">
+        <li>Founder Chairman, PERTC – Pakistan Economic Research & Training Centre</li>
+        <li>Founder Chairman, PYEC – Pakistan Young Entrepreneurs Club</li>
+        <li>Chairman, The Innovators Schooling System</li>
+        <li>CEO, Next Level Management Solutions</li>
+        <li>Chairman, Happy Pakistan Welfare Trust</li>
+        <li>Director, Fatima Green City</li>
+      </ul>
+
+      <h3 class="about-chairman-subtitle">Teaching & Training Engagements</h3>
+      <p class="about-chairman-text">
+        Prof. Nadeem Ahmed Faraz has served as faculty, trainer, and mentor at numerous prestigious institutions, including Adamson Institute of Business Administration & Technology, Indus University, MAJU, Preston University, University of Karachi, Federal Urdu University, and dozens more.
+      </p>
+
+      <h3 class="about-chairman-subtitle">Vision 2047 – National Transformation Agenda</h3>
+      <p class="about-chairman-text">
+        Prof. Nadeem Ahmed Faraz envisions a strong, self-reliant, and globally competitive Pakistan. This vision emphasizes human capital as the core asset, research, innovation, AI and entrepreneurship as growth engines, education systems that teach “Learn How to Learn,” and youth empowerment for sustainable economic progress.
+      </p>
+
+      <h3 class="about-chairman-subtitle">Leadership Philosophy & Legacy</h3>
+      <p class="about-chairman-text">
+        Prof. Faraz firmly believes that nations rise when minds are trained to think, innovate, and lead with values. Through his leadership, he continues to shape generations of researchers, entrepreneurs, policy thinkers, and ethical global leaders.
+      </p>
+
+      <p class="about-chairman-quote">
+        “Education must not only inform—it must transform minds, build character, and create economic leaders for the future.”
+      </p>
+
+    </div>
+
+    <!-- RIGHT STICKY IMAGE -->
+    <div class="about-chairman-image-wrapper">
+      <img src="images/about-chairman-img.png" alt="Prof. Nadeem Ahmed Faraz" class="about-chairman-image">
+    </div>
+
+  </div>
+</section>
+
+
+ 
+
+   
+
+
+
+    <!-- 4️⃣ Why Choose Us -->
+    <section class="new-why-choose-us" id="new-why-choose-us-section">
+    <div class="new-why-choose-us-container">
+        <div class="new-why-choose-us-header">
+            <h2>Why Parents Choose The Innovators</h2>
+            <p>Discover the advantages that make us the first choice for world-class education</p>
+        </div>
+        <div class="new-why-choose-us-grid">
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Safe & Secure Campus</h3>
+                <p>24/7 surveillance, biometric access, and strict child protection policies ensure your child's safety.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Highly Qualified Faculty</h3>
+                <p>Experienced educators with global certifications and continuous professional development.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Technology Integration</h3>
+                <p>Smart classrooms, robotics labs, coding workshops, and digital platforms for 21st century skills.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Holistic Development</h3>
+                <p>Balanced growth through academics, sports, arts, leadership, and character building.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>STEM Excellence</h3>
+                <p>Cutting-edge labs in physics, chemistry, biology, and computer science with practical focus.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>University Placement</h3>
+                <p>Dedicated guidance with a 100% placement record and scholarship opportunities.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.new-why-choose-us-card');
+
+    // Set initial border color as currentColor
+    cards.forEach(card => {
+        const color = card.getAttribute('data-color');
+        card.style.borderTopColor = color;
+        card.style.color = color; // used by ::before for fill
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.6s ease-out';
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.2});
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+
+
+<section class="new-facility-section">
+  <div class="new-facility-container">
+
+    <header class="new-facility-header">
+      <h2 class="new-facility-title">Facilities</h2>
+    </header>
+
+    <div class="new-facility-grid">
+
+      <!-- RED CARD -->
+      <div class="new-facility-card new-facility-red">
+        <div class="new-facility-icon">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <h3 class="new-facility-heading">
+          Industrial Relations Development Cell
+        </h3>
+        <p class="new-facility-text">
+          The Industrial Relations Development Cell serves as a structured institutional platform to strengthen
+          collaboration between academia and industry. It focuses on workforce development, industrial engagement,
+          policy understanding, compliance orientation, and sustainable employer–employee relations to support
+          organizational efficiency and economic growth.
+        </p>
+      </div>
+
+      <!-- YELLOW CARD -->
+      <div class="new-facility-card new-facility-yellow">
+        <div class="new-facility-icon">
+          <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+        <h3 class="new-facility-heading">
+          Research & Leadership
+        </h3>
+        <p class="new-facility-text">
+          The Research & Leadership facility promotes applied research, strategic inquiry, and leadership development.
+          It supports policy-oriented research, academic excellence, leadership capacity building, and evidence-based
+          decision-making to prepare individuals for institutional, national, and global leadership roles.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- 6️⃣ Vision & Mission -->
+   <section class="vision-mission-modern" style="padding: 40px 0;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Vision, Mission & Responsibility</h2>
+      <div class="gradient-line"></div>
+      <p class="section-subtitle">
+        Guiding principles that define our educational philosophy and drive impactful learning experiences.
+      </p>
+    </div>
+
+    <div class="vm-cards-layout">
+      <!-- Vision Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Vision</h3>
+        <p>
+          The School's vision is expressed in our strategic plan, which is based on the premise that excellence comes when each student achieves his best in both the curricular and co-curricular environments. The School believes this goal can best be realized within a supportive and stimulating educational environment that includes state-of-the-art education facilities and resources.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="vm-card card-red">
+        <div class="icon-wrapper">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Mission</h3>
+        <p>
+          To be an exemplary school developing wisdom, integrity, compassion & faith, and nurturing students with a sure knowledge of who they are and how they should be.
+        </p>
+      </div>
+
+      <!-- Responsibility Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Responsibility</h3>
+        <p>
+          Educating the whole person for the challenges of a changing world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+   
+
+
+   
+
+
+
+    
+ <!-- Faq`/ -->
+     <section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item active">
+      <button class="faq-question">
+        What is The Innovation Schooling System?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The Innovation Schooling System is a modern educational institute focused
+          on quality education, character building, and innovative learning methods.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Which classes do you offer?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          We offer classes from Playgroup to Matric with a well-structured academic
+          curriculum and experienced faculty.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is your school system English medium?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes, The Innovation Schooling System follows an English-medium curriculum
+          with strong emphasis on communication skills.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do you focus on co-curricular activities?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Absolutely. We promote sports, debates, creativity, and leadership
+          activities alongside academics.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can parents contact the school?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Parents can contact us through school office, phone, or official social
+          media platforms during working hours.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+      faqItems.forEach(faq => {
+        if (faq !== item) {
+          faq.classList.remove("active");
+          faq.querySelector(".faq-answer").style.maxHeight = null;
+        }
+      });
+
+      item.classList.toggle("active");
+      const answer = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // Open first FAQ by default
+  document.querySelector(".faq-item.active .faq-answer").style.maxHeight =
+    document.querySelector(".faq-item.active .faq-answer").scrollHeight + "px";
+</script>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

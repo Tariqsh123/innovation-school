@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agripreneurship | The Innovators Schooling System</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- NEw  -->
+
+    <!-- Hero-->
+    <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+        <!-- Headline -->
+        <h1 id="about-hero-title">
+            Agripreneurship Program – Nurturing Young Innovators in Agriculture
+        </h1>
+
+        <!-- Subtext / Description -->
+        <p id="about-hero-para">
+            At The Innovation Schooling System, our Agripreneurship Program is designed for young learners to explore 
+            the exciting world of modern agriculture and agri-business. Through a 3-year hands-on journey, students 
+            develop practical farming skills, entrepreneurial thinking, innovation, and leadership—all while cultivating 
+            a passion for sustainable agriculture and real-world problem solving.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="about-hero-buttons">
+            <a href="about.html" title="About" class="about-hero-btn about-hero-btn-red">Learn More</a>
+            <a href="tel:+92062223585" title="Call Now" class="about-hero-btn about-hero-btn-yellow">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('images/Agripreneurship-hero-image.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+ <!-- 2️⃣ Admissions Open Banner -->
+  <section class="admissions-banner" id="admission">
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h3><i class="fas fa-bell"></i> Enroll in the Agripreneurship Development Program</h3>
+                <p>
+                    Give your child an innovative learning experience! Our 3-year Agripreneurship program nurtures 
+                    practical farming skills, entrepreneurial thinking, creativity, and leadership. 
+                    Early admissions ensure priority placement, personalized guidance, and hands-on exposure to modern agriculture and agri-business projects.
+                </p>
+            </div>
+            <div class="banner-btns">
+                <a title="Call Now" href="tel:+92062223585" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    Call Now
+                </a>
+                <a title="Facilities" href="facilities.html" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Facilities
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 3️⃣ Trust & Accreditation -->
+    <section class="trust">
+    <div class="container">
+        <div class="section-title">
+            <h2>Trusted & Accredited</h2>
+            <div class="section-subtitle">
+                Recognized by leading educational bodies and accredited for excellence
+            </div>
+        </div>
+        <div class="trust-logos">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const logos = document.querySelectorAll('.trust-logo');
+
+    // Set initial state for all logos
+    logos.forEach((logo, index) => {
+        logo.style.opacity = '0';
+        logo.style.transform = 'translateY(50px)';
+        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                observer.unobserve(el); // animate once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    // Observe each logo
+    logos.forEach(logo => observer.observe(logo));
+});
+
+</script>
+
+
+<!-- 4️⃣ Why Choose Us -->
+  <section class="new-why-choose-us" id="new-why-choose-us-section">
+    <div class="new-why-choose-us-container">
+        <div class="new-why-choose-us-header">
+            <h2>Why Choose Our Agripreneurship Program</h2>
+            <p>Discover the benefits of enrolling your child in our 3-year Agripreneurship Development Program</p>
+        </div>
+        <div class="new-why-choose-us-grid">
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Hands-On Agricultural Learning</h3>
+                <p>Students engage in real-world farming projects, exploring modern agriculture techniques while developing practical skills and independence.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Entrepreneurial Thinking & Innovation</h3>
+                <p>Our program fosters creativity, problem-solving, and business mindset, empowering students to turn agricultural ideas into viable ventures.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Leadership & Teamwork</h3>
+                <p>Through collaborative projects and farm-based activities, students develop leadership skills, communication, and emotional intelligence.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Analytical & Problem-Solving Skills</h3>
+                <p>Students analyze real agricultural challenges, make data-driven decisions, and develop critical thinking essential for success in agribusiness.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Sustainable & Global Perspective</h3>
+                <p>Our curriculum promotes sustainable farming practices and awareness of global agricultural trends, preparing students to be responsible future leaders.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Strong Foundation for Future Success</h3>
+                <p>The 3-year program equips students with essential skills in agriculture, entrepreneurship, and innovation, ensuring a strong foundation for higher education and career growth.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.new-why-choose-us-card');
+    cards.forEach(card => {
+        const color = card.getAttribute('data-color');
+        card.style.borderTopColor = color;
+        card.style.color = color; 
+    });
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.6s ease-out';
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.2});
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+
+
+
+
+<!-- About Chairman -->
+ <section id="about-chairman" class="about-chairman-section">
+  <div class="about-chairman-container about-chairman-layout">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-chairman-content">
+
+    <h2 class="about-chairman-title">Programs Offered by The Innovators Schooling System</h2>
+    <h3 class="about-chairman-tagline">Kidspreurship & Agripreneurship Program<br>Creating Entrepreneurs from the Classroom</h3>
+
+    <p class="about-chairman-text">
+        At The Innovators Schooling System, Kidspreurship and Agripreneurship are not extracurricular activities—they are core strategic programs integrated into the Primary and Lower Secondary Sections to cultivate an entrepreneurial mindset from an early age. 
+        This forward-thinking curriculum is research-designed and future-oriented, with a clear objective: to develop entrepreneurs at school level and enable students to initiate real startups during their academic journey.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Program Philosophy</h3>
+    <p class="about-chairman-text">
+        The Kidspreurship & Agripreneurship Program is built on the belief that entrepreneurship is not inherited—it is developed through structured learning, practice, and mentorship. Students are systematically nurtured to think like innovators, problem-solvers, and value creators rather than job seekers.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Program Structure & Approach</h3>
+    <ul class="about-chairman-list">
+        <li>Introduced from Primary Grades and strengthened through Lower Secondary</li>
+        <li>Progressive, age-appropriate learning pathways</li>
+        <li>Hands-on, project-based, and experiential methodology</li>
+        <li>Real-world business simulations and startup models</li>
+        <li>Mentorship-driven learning environment</li>
+    </ul>
+
+    <h3 class="about-chairman-subtitle">Core Learning Domains</h3>
+    <ul class="about-chairman-list">
+        <li><strong>Entrepreneurial Mindset Development:</strong> Opportunity identification, problem-solving, creativity, innovation, resilience, leadership, risk assessment, and decision-making.</li>
+        <li><strong>Business Understanding:</strong> Fundamentals of business models, value creation, understanding products, services, customers, markets, supply chains, and operations.</li>
+        <li><strong>Financial Literacy:</strong> Money management, budgeting, costing, pricing, profit & loss, savings & reinvestment, ethical financial behavior, and responsibility.</li>
+        <li><strong>Market Research & Consumer Insight:</strong> Identifying customer needs and market gaps, basic research techniques, data interpretation, competitive analysis, and product positioning.</li>
+        <li><strong>Selling & Communication Skills:</strong> Sales techniques, persuasion, customer engagement, presentation, negotiation, pitching skills, brand communication, and storytelling.</li>
+        <li><strong>Decision-Making & Strategic Thinking:</strong> Analytical decision-making, evaluating risks and outcomes, accountability, and leadership judgment.</li>
+        <li><strong>Agripreneurship Focus (Sustainability & Green Economy):</strong> Agriculture-based enterprises, sustainable farming, agri-innovation, green technologies, environmental responsibility, social entrepreneurship, and practical sustainability projects.</li>
+    </ul>
+
+    <h3 class="about-chairman-subtitle">Real Impact & Outcomes</h3>
+    <p class="about-chairman-text">
+        As students progress into the Secondary Section, they are capable of initiating real startups, earning through school-supported entrepreneurial ventures, applying business concepts in real market environments, and developing independence, confidence, and financial awareness.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Graduate Profile (Program Outcomes)</h3>
+    <ul class="about-chairman-list">
+        <li>Entrepreneurially driven innovators</li>
+        <li>Financially literate and market-aware individuals</li>
+        <li>Confident decision-makers and problem-solvers</li>
+        <li>Ethical business thinkers with social responsibility</li>
+        <li>Future-ready leaders prepared for global economic challenges</li>
+    </ul>
+
+    <p class="about-chairman-quote">
+        <strong>Our Vision:</strong> We do not wait for graduation to teach entrepreneurship. We create entrepreneurs while students are still in school. At The Innovators Schooling System, education is not preparation for life—it is life in practice.
+    </p>
+
+</div>
+
+
+    <!-- RIGHT STICKY IMAGE -->
+    <div class="about-chairman-image-wrapper">
+      <img src="images/Agripreneurship-sticky-image.png" alt="AI Program Student" class="about-chairman-image">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- 6️⃣ Vision & Mission -->
+   <section class="vision-mission-modern" style="padding-top: 50px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Vision, Mission & Responsibility</h2>
+      <div class="gradient-line"></div>
+      <p class="section-subtitle">
+        Guiding principles that define our educational philosophy and drive impactful learning experiences.
+      </p>
+    </div>
+
+    <div class="vm-cards-layout">
+      <!-- Vision Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Vision</h3>
+        <p>
+          The School's vision is expressed in our strategic plan, which is based on the premise that excellence comes when each student achieves his best in both the curricular and co-curricular environments. The School believes this goal can best be realized within a supportive and stimulating educational environment that includes state-of-the-art education facilities and resources.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="vm-card card-red">
+        <div class="icon-wrapper">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Mission</h3>
+        <p>
+          To be an exemplary school developing wisdom, integrity, compassion & faith, and nurturing students with a sure knowledge of who they are and how they should be.
+        </p>
+      </div>
+
+      <!-- Responsibility Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Responsibility</h3>
+        <p>
+          Educating the whole person for the challenges of a changing world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+   <section id="clp-details-section" class="clp-details-section">
+  <div class="container">
+
+    <!-- Block 1 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.1s">
+      <div class="clp-block-image">
+        <img src="images/Personalized-Entrepreneurial-Learning-enterpreneur.png" alt="Entrepreneurial Learning">
+      </div>
+      <div class="clp-block-content">
+        <h3>Personalized Entrepreneurial Learning</h3>
+        <p>Our Kidspreurship & Agripreneurship program adapts to each child’s learning pace, nurturing their curiosity and entrepreneurial mindset. Students engage in tailored projects that foster independence, problem-solving, and confidence while exploring real-world business opportunities.</p>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.2s">
+      <div class="clp-block-image">
+        <img src="images/Creativity-Collaborative-Skills-enterpreneur.png" alt="Creative & Social Skills">
+      </div>
+      <div class="clp-block-content">
+        <h3>Creativity & Collaborative Skills</h3>
+        <p>Hands-on entrepreneurial projects and team-based activities nurture creativity, innovation, and leadership. Students learn to collaborate, communicate effectively, and solve problems while bringing their business and agricultural ideas to life.</p>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.3s">
+      <div class="clp-block-image">
+        <img src="images/Cognitive-Strategic-Growth-enterpreneur.png" alt="Cognitive & Business Growth">
+      </div>
+      <div class="clp-block-content">
+        <h3>Cognitive & Strategic Growth</h3>
+        <p>Through project-based learning and real market simulations, students develop analytical thinking, financial literacy, and decision-making skills. This strengthens their ability to plan, innovate, and execute entrepreneurial ventures successfully.</p>
+      </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.4s">
+      <div class="clp-block-image">
+        <img src="images/Independence-Real-World-Impact-enterpreneur.png" alt="Entrepreneurial Independence">
+      </div>
+      <div class="clp-block-content">
+        <h3>Independence & Real-World Impact</h3>
+        <p>Students gain confidence and practical experience by initiating real startups and agribusiness projects. The program encourages independent thinking, responsibility, and a proactive approach to learning, laying the foundation for lifelong entrepreneurial success.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+/* ===== CLP Details Section ===== */
+.clp-details-section {
+  padding: 0px 20px;
+  padding-top: 60px;
+  background: #fff; /* white theme */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.clp-details-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Block layout */
+.clp-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* subtle shadow */
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+
+.clp-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.clp-block-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.clp-block-content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.clp-block-content h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+  position: relative;
+}
+
+.clp-block-content h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, #f6bc21, #e41f1c); /* subtle accent */
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.clp-block-content p {
+  font-size: medium;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .clp-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+  .clp-block.reverse {
+    flex-direction: column;
+  }
+  .clp-block-image img {
+    max-width: 100%;
+  }
+  .clp-block-content h3 {
+    font-size: 30px;
+  }
+  .clp-block-content p {
+    font-size: 1.15rem;
+  }
+}
+@media(max-width:600px){
+    .clp-block-content {
+    padding: 20px;
+}
+.clp-block-content h3 {
+        font-size: 25px;
+    }
+        .clp-block-content p {
+        font-size: medium;
+    }
+    .clp-block-content h3::after {
+    margin-left: 70px;
+}
+}
+</style>
+
+
+
+
+
+<!-- Faq`/ -->
+   <section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item active">
+      <button class="faq-question">
+        What is the Kidspreurship & Agripreneurship Program at The Innovation Schooling System?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          This program is a 3-year structured curriculum designed to develop entrepreneurial and agripreneurial skills in young learners. Students learn to think like innovators, solve real-world problems, and initiate small startups while still in school.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Which age group can enroll in this program?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The program is designed for students from Primary to Lower Secondary grades. Learning is progressive and age-appropriate, gradually building skills in business, agriculture, and innovation.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is prior knowledge required for enrollment?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No prior knowledge is needed. The program starts with basic entrepreneurial and agripreneurial concepts, guiding students step-by-step to develop creativity, financial literacy, and business acumen.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What kinds of activities do students participate in?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Students engage in hands-on business projects, agricultural experiments, startup simulations, creative workshops, financial exercises, and team-based challenges that promote problem-solving, leadership, and innovation.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can parents enroll their child in the Kidspreurship & Agripreneurship Program?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Parents can contact the school office, call us, or reach out via our official social media channels to register their child for the Kidspreurship & Agripreneurship Program and start their entrepreneurial journey.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+      faqItems.forEach(faq => {
+        if (faq !== item) {
+          faq.classList.remove("active");
+          faq.querySelector(".faq-answer").style.maxHeight = null;
+        }
+      });
+
+      item.classList.toggle("active");
+      const answer = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // Open first FAQ by default
+  document.querySelector(".faq-item.active .faq-answer").style.maxHeight =
+    document.querySelector(".faq-item.active .faq-answer").scrollHeight + "px";
+</script>
+
+<!-- New: Upcoming Events -->
+    <section class="form-section">
+  <div class="form-container-main">
+    <div class="form-section-title">
+  <h2>Contact Us About Agripreneurship</h2>
+  <div class="form-title-line"></div>
+  <p class="form-section-subtitle">
+    Have questions about the Chinese Language Program? Fill out the form below, and our team will get back to you via email with all the information you need.
+  </p>
+</div>
+
+
+    <div class="form-image-wrapper">
+      <!-- Form Box -->
+      <div class="form-left">
+        <form class="form-main" action="#" method="post">
+          
+          <!-- First + Last Name Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-input" type="text" name="first_name" required placeholder=" ">
+              <label class="form-label">First Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="text" name="last_name" required placeholder=" ">
+              <label class="form-label">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="email" name="email" required placeholder=" ">
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="tel" name="phone" required placeholder=" ">
+              <label class="form-label">Phone</label>
+            </div>
+          </div>
+
+          <!-- Details Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
+              <label class="form-label">Details / Message</label>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="form-right">
+        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="Contact Us Image" title="Contact Us Image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

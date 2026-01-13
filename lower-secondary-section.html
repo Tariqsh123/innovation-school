@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Secondary Section | The Innovators Schooling System</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- NEw  -->
+
+    <!-- Hero-->
+   <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+        <!-- Headline -->
+        <h1 id="about-hero-title">
+            Lower Secondary Section (Grade 6 – Grade 7) – Nurturing Future Leaders
+        </h1>
+
+        <!-- Subtext / Description -->
+        <p id="about-hero-para">
+            At The Innovation Schooling System, our Lower Secondary Section provides Grade 6 and Grade 7 students with 
+            a rigorous and holistic academic experience. Through interdisciplinary projects, STEAM-based learning, 
+            and leadership development programs, students enhance critical thinking, problem-solving, and collaborative 
+            skills while preparing for higher education and global opportunities.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="about-hero-buttons">
+            <a href="about.html" title="About" class="about-hero-btn about-hero-btn-red">Learn More</a>
+            <a href="tel:+92062223585" title="Call Now" class="about-hero-btn about-hero-btn-yellow">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('images/primary-hero-image.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+ <!-- 2️⃣ Admissions Open Banner -->
+  <section class="admissions-banner" id="admission">
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h3><i class="fas fa-bell"></i> Enroll in the Lower Secondary Section (Grade 6 – Grade 7)</h3>
+                <p>
+                    Prepare your child for higher education and global opportunities! Our Lower Secondary Section focuses on 
+                    academic rigor, STEAM-based projects, leadership development, and critical thinking. Early admissions 
+                    ensure priority placement, personalized guidance, and access to an interdisciplinary, experiential, 
+                    and future-ready curriculum.
+                </p>
+            </div>
+            <div class="banner-btns">
+                <a title="Call Now" href="tel:+92062223585" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    Call Now
+                </a>
+                <a title="Facilities" href="facilities.html" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Facilities
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- 3️⃣ Trust & Accreditation -->
+    <section class="trust">
+    <div class="container">
+        <div class="section-title">
+            <h2>Trusted & Accredited</h2>
+            <div class="section-subtitle">
+                Recognized by leading educational bodies and accredited for excellence
+            </div>
+        </div>
+        <div class="trust-logos">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const logos = document.querySelectorAll('.trust-logo');
+
+    // Set initial state for all logos
+    logos.forEach((logo, index) => {
+        logo.style.opacity = '0';
+        logo.style.transform = 'translateY(50px)';
+        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                observer.unobserve(el); // animate once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    // Observe each logo
+    logos.forEach(logo => observer.observe(logo));
+});
+
+</script>
+
+
+<!-- 4️⃣ Why Choose Us -->
+  <section class="new-why-choose-us" id="new-why-choose-us-section">
+    <div class="new-why-choose-us-container">
+        <div class="new-why-choose-us-header">
+            <h2>Why Choose Lower Secondary Section</h2>
+            <p>Discover the advantages of enrolling your child in our Grade 6 – Grade 7 Lower Secondary Program</p>
+        </div>
+        <div class="new-why-choose-us-grid">
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Academic Rigor & Excellence</h3>
+                <p>Our curriculum strengthens core subjects and introduces advanced interdisciplinary learning, preparing students for high school and beyond.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Critical Thinking & Problem Solving</h3>
+                <p>Project-based and inquiry-driven learning develops analytical reasoning, creativity, and independent problem-solving skills for real-world challenges.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Leadership & Social Skills</h3>
+                <p>Students enhance teamwork, communication, collaboration, and leadership abilities through interactive, group-based projects and activities.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Analytical & Cognitive Development</h3>
+                <p>STEM projects, research tasks, and logical reasoning exercises cultivate higher-order thinking, focus, and problem-solving abilities.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Global Perspective & Awareness</h3>
+                <p>Students explore international perspectives, cultural understanding, and digital literacy, preparing them to thrive in a globalized world.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Preparation for Higher Education</h3>
+                <p>Structured guidance ensures students are academically, socially, and emotionally ready to transition confidently into Upper Secondary and future leadership roles.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.new-why-choose-us-card');
+    cards.forEach(card => {
+        const color = card.getAttribute('data-color');
+        card.style.borderTopColor = color;
+        card.style.color = color; 
+    });
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.6s ease-out';
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.2});
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+
+
+
+
+<!-- About Chairman -->
+ <section id="about-chairman" class="about-chairman-section">
+  <div class="about-chairman-container about-chairman-layout">
+
+    <!-- LEFT CONTENT -->
+   <div class="about-chairman-content">
+
+  <h2 class="about-chairman-title">Programs Offered by The Innovators Schooling System</h2>
+  <h3 class="about-chairman-tagline">Lower Secondary Section (Grade 6 & Grade 7)</h3>
+
+  <p class="about-chairman-text">
+    <strong>Shaping Future Leaders | Preparing for Global Excellence</strong><br>
+    At The Innovators Schooling System, the Lower Secondary Section represents a critical transformation phase in a learner’s academic and intellectual journey. 
+    The curriculum is research-designed, future-oriented, and internationally benchmarked, with a clear objective: to prepare students today for top-tier universities and the professional world of the next decade.
+  </p>
+
+  <p class="about-chairman-text">
+    Our approach bridges foundational knowledge with advanced thinking, ensuring students are not only academically strong but also strategically prepared for global challenges.
+  </p>
+
+  <h3 class="about-chairman-subtitle">Curriculum Vision & Framework</h3>
+  <ol class="about-chairman-list">
+    <li>
+      <strong>Research-Driven Academic Design:</strong><br>
+      Inquiry-based learning encouraging analysis, evaluation, and synthesis<br>
+      Early exposure to research methodologies and structured thinking<br>
+      Development of academic discipline and intellectual independence
+    </li>
+    <li>
+      <strong>Global Readiness & University-Oriented Thinking:</strong><br>
+      Focus on long-term academic planning and career awareness<br>
+      Cultivation of critical reasoning, communication, and leadership skills<br>
+      Preparation aligned with expectations of top-notch global universities
+    </li>
+    <li>
+      <strong>Advanced Pedagogy & Skill Integration:</strong><br>
+      Concept-based instruction moving beyond memorization<br>
+      Project-based learning and real-world problem solving<br>
+      Continuous assessment for mastery and growth
+    </li>
+    <li>
+      <strong>Professional & Life Skills Development:</strong><br>
+      Strong emphasis on communication, collaboration, and confidence<br>
+      Ethical awareness, adaptability, and future career skills
+    </li>
+  </ol>
+
+  <h3 class="about-chairman-subtitle">Signature Features of the Lower Secondary Section</h3>
+  <ul class="about-chairman-list">
+    <li>
+      <strong>Communication Skills Development:</strong><br>
+      Advanced spoken and written communication training<br>
+      Public speaking, presentations, debates, and academic writing<br>
+      Confidence-building for leadership and professional environments
+    </li>
+    <li>
+      <strong>CLP – Chinese Language Program:</strong><br>
+      (In Collaboration with TANG International Education, China)<br>
+      Live, direct instruction from China<br>
+      Authentic Mandarin language exposure and cultural immersion<br>
+      Preparing students for future global academic and economic opportunities
+    </li>
+    <li>
+      <strong>Artificial Intelligence (AI) Education:</strong><br>
+      Conceptual and applied understanding of AI<br>
+      Computational thinking, logic building, and ethical technology use<br>
+      Preparing learners for an AI-powered global economy
+    </li>
+    <li>
+      <strong>Kidspreurship Program:</strong><br>
+      Entrepreneurial thinking, innovation, and leadership development<br>
+      Business simulations, idea development, and teamwork<br>
+      Financial awareness and strategic problem-solving
+    </li>
+    <li>
+      <strong>Agripreneurship Program:</strong><br>
+      Understanding agriculture, sustainability, and green economies<br>
+      Practical projects related to food systems and environmental stewardship<br>
+      Building responsibility toward sustainable global development
+    </li>
+    <li>
+      <strong>STEAM Education:</strong><br>
+      Integrated Science, Technology, Engineering, Arts & Mathematics<br>
+      Design thinking, experimentation, and innovation-driven learning<br>
+      Preparing students for advanced scientific and technological pathways
+    </li>
+    <li>
+      <strong>Mathematical Mindset Development:</strong><br>
+      Logical reasoning, analytical thinking, and problem-solving<br>
+      Concept mastery and application-based mathematics<br>
+      Building confidence and precision in mathematical thinking
+    </li>
+    <li>
+      <strong>Financial Literacy:</strong><br>
+      Money management, budgeting, savings, and investment concepts<br>
+      Understanding economic systems and personal finance<br>
+      Preparing financially responsible and aware future professionals
+    </li>
+  </ul>
+
+  <h3 class="about-chairman-subtitle">Lower Secondary Graduate Profile (Outcomes)</h3>
+  <ul class="about-chairman-list">
+    <li>Strong communicators and confident presenters</li>
+    <li>Research-oriented learners with analytical depth</li>
+    <li>Technologically aware and AI-literate</li>
+    <li>Entrepreneurially and financially informed</li>
+    <li>Environmentally conscious global citizens</li>
+    <li>Academically prepared for Upper Secondary challenges and international benchmarks</li>
+  </ul>
+
+  <p class="about-chairman-quote">
+    <strong>Our Commitment:</strong> We do not educate students for exams alone. We educate them for universities, professions, and leadership in a rapidly changing world. 
+    At The Innovators Schooling System, Grades 6 & 7 are the launchpad for excellence, innovation, and creativity.
+  </p>
+
+</div>
+
+
+
+    <!-- RIGHT STICKY IMAGE -->
+    <div class="about-chairman-image-wrapper">
+      <img src="images/primary-sticky-image.png" alt="Montessori Student" class="about-chairman-image">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- 6️⃣ Vision & Mission -->
+   <section class="vision-mission-modern" style="padding-top: 50px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Vision, Mission & Responsibility</h2>
+      <div class="gradient-line"></div>
+      <p class="section-subtitle">
+        Guiding principles that define our educational philosophy and drive impactful learning experiences.
+      </p>
+    </div>
+
+    <div class="vm-cards-layout">
+      <!-- Vision Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Vision</h3>
+        <p>
+          The School's vision is expressed in our strategic plan, which is based on the premise that excellence comes when each student achieves his best in both the curricular and co-curricular environments. The School believes this goal can best be realized within a supportive and stimulating educational environment that includes state-of-the-art education facilities and resources.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="vm-card card-red">
+        <div class="icon-wrapper">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Mission</h3>
+        <p>
+          To be an exemplary school developing wisdom, integrity, compassion & faith, and nurturing students with a sure knowledge of who they are and how they should be.
+        </p>
+      </div>
+
+      <!-- Responsibility Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Responsibility</h3>
+        <p>
+          Educating the whole person for the challenges of a changing world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+   <section id="clp-details-section" class="clp-details-section">
+  <div class="container">
+
+    <!-- Block 1 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.1s">
+      <div class="clp-block-image">
+        <img src="images/Cambridge-Aligned-Academic-Excellence-primary.png" alt="Cambridge-Aligned Academic Excellence">
+      </div>
+      <div class="clp-block-content">
+        <h3>Research-Driven Academic Excellence</h3>
+        <p>
+          Our Lower Secondary curriculum (Grades 6 & 7) emphasizes critical thinking, conceptual mastery, and advanced understanding in English, Mathematics, Science, and Humanities. Students are trained to analyze, evaluate, and synthesize knowledge while meeting international academic standards.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.2s">
+      <div class="clp-block-image">
+        <img src="images/Research-Oriented-Inquiry-Based-Learning-primary.png" alt="Research-Oriented & Inquiry-Based Learning">
+      </div>
+      <div class="clp-block-content">
+        <h3>Inquiry-Based & Analytical Learning</h3>
+        <p>
+          Students engage in research projects, experiments, and case studies that encourage independent thinking and problem-solving. Inquiry-driven learning nurtures intellectual curiosity, structured reasoning, and the ability to tackle complex challenges.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.3s">
+      <div class="clp-block-image">
+        <img src="images/Advanced-Pedagogical-Practices-primary.png" alt="Advanced Pedagogical Practices">
+      </div>
+      <div class="clp-block-content">
+        <h3>Advanced Pedagogy & Skill Integration</h3>
+        <p>
+          Concept-based instruction moves beyond memorization to include project-based learning, real-world applications, and collaborative problem solving. Continuous assessment and reflective practices ensure mastery, growth, and readiness for global academic challenges.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.4s">
+      <div class="clp-block-image">
+        <img src="images/Holistic-Development-Approach-primary.png" alt="Holistic Development Approach">
+      </div>
+      <div class="clp-block-content">
+        <h3>Holistic Development & Global Readiness</h3>
+        <p>
+          Our Lower Secondary Section develops students academically, socially, and emotionally. Leadership, communication, ethical awareness, collaboration, and global citizenship are nurtured alongside creativity and critical thinking, shaping well-rounded future leaders.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<style>
+/* ===== CLP Details Section ===== */
+.clp-details-section {
+  padding: 0px 20px;
+  padding-top: 60px;
+  background: #fff; /* white theme */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.clp-details-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Block layout */
+.clp-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* subtle shadow */
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+
+.clp-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.clp-block-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.clp-block-content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.clp-block-content h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+  position: relative;
+}
+
+.clp-block-content h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, #f6bc21, #e41f1c); /* subtle accent */
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.clp-block-content p {
+  font-size: medium;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .clp-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+  .clp-block.reverse {
+    flex-direction: column;
+  }
+  .clp-block-image img {
+    max-width: 100%;
+  }
+  .clp-block-content h3 {
+    font-size: 30px;
+  }
+  .clp-block-content p {
+    font-size: 1.15rem;
+  }
+}
+@media(max-width:600px){
+    .clp-block-content {
+    padding: 20px;
+}
+.clp-block-content h3 {
+        font-size: 25px;
+    }
+        .clp-block-content p {
+        font-size: medium;
+    }
+    .clp-block-content h3::after {
+    margin-left: 70px;
+}
+}
+</style>
+
+
+
+
+
+<!-- Faq`/ -->
+     <section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item active">
+      <button class="faq-question">
+        What is the Lower Secondary Section (Grade 6 & Grade 7) at The Innovation Schooling System?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The Lower Secondary Section is designed to shape future leaders (Grades 6 & 7) with a strong academic foundation, advanced thinking skills, leadership, and global readiness. Students are prepared for Upper Secondary education and international opportunities.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Which grades are included in the Lower Secondary Section?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The Lower Secondary Section includes Grades 6 and 7, offering age-appropriate curriculum, critical thinking challenges, and skills for academic and personal growth.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is prior academic knowledge required for enrollment?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Students are expected to have foundational knowledge from Primary School. The program builds on these foundations, gradually enhancing analytical, research, and leadership skills in a supportive environment.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What kind of activities do students participate in?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Students engage in project-based learning, research assignments, STEM challenges, debates, creative arts, sports, cultural events, and collaborative problem-solving activities to foster holistic development.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can parents enroll their child in the Lower Secondary Section?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Parents can contact the school office, call directly, or reach out via official social media channels to register their child for the Lower Secondary Section – Grades 6 & 7.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+      faqItems.forEach(faq => {
+        if (faq !== item) {
+          faq.classList.remove("active");
+          faq.querySelector(".faq-answer").style.maxHeight = null;
+        }
+      });
+
+      item.classList.toggle("active");
+      const answer = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // Open first FAQ by default
+  document.querySelector(".faq-item.active .faq-answer").style.maxHeight =
+    document.querySelector(".faq-item.active .faq-answer").scrollHeight + "px";
+</script>
+
+<!-- New: Upcoming Events -->
+    <section class="form-section">
+  <div class="form-container-main">
+    <div class="form-section-title">
+  <h2>Contact Us About Lower Secondary</h2>
+  <div class="form-title-line"></div>
+  <p class="form-section-subtitle">
+    Have questions about the Chinese Language Program? Fill out the form below, and our team will get back to you via email with all the information you need.
+  </p>
+</div>
+
+
+    <div class="form-image-wrapper">
+      <!-- Form Box -->
+      <div class="form-left">
+        <form class="form-main" action="#" method="post">
+          
+          <!-- First + Last Name Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-input" type="text" name="first_name" required placeholder=" ">
+              <label class="form-label">First Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="text" name="last_name" required placeholder=" ">
+              <label class="form-label">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="email" name="email" required placeholder=" ">
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="tel" name="phone" required placeholder=" ">
+              <label class="form-label">Phone</label>
+            </div>
+          </div>
+
+          <!-- Details Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
+              <label class="form-label">Details / Message</label>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="form-right">
+        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="Contact Us Image" title="Contact Us Image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

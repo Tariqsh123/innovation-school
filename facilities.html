@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | The Innovators Schooling System</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- NEw  -->
+
+    <!-- Hero-->
+     <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+    <h1 id="about-hero-title">Our State-of-the-Art Facilities</h1>
+    <p id="about-hero-para">
+        At The Innovators Schooling System, we provide a modern and inspiring environment that fosters learning and creativity. From advanced science labs to creative art studios, sports complexes, and interactive classrooms, our facilities are designed to empower students to explore, innovate, and thrive in every field.
+    </p>
+
+    <div class="about-hero-buttons">
+        <a href="about.html" title="About Us" class="about-hero-btn about-hero-btn-red">About Us</a>
+        <a href="contact-us.html" title="Contact Us" class="about-hero-btn about-hero-btn-yellow">Contact Us</a>
+    </div>
+</div>
+
+</section>
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6QQgVTnEv2X4hAdpToCXbDgoXSv5uw5zqfw&s') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+
+<!-- Facilities Section -->
+<section id="facilities" class="facilities-section">
+  <div class="facilities-container">
+    <h1 class="facilities-title">Our World-Class Facilities</h1>
+    <p class="facilities-subtitle">
+      The Innovators Schooling System provides advanced facilities to inspire creativity, learning, and growth.
+    </p>
+
+    <div class="facilities-grid">
+      <div class="facility-card">
+        <i class="fas fa-eye"></i>
+        <span>Visual Learning</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-football-ball"></i>
+        <span>Play Area with Indoor Games</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-handshake"></i>
+        <span>IRDC (Industrial Relation Development Cell)</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-check-circle"></i>
+        <span>QEC (Quality Enhancement Cell)</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-theater-masks"></i>
+        <span>Theater / Auditorium</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-book"></i>
+        <span>Library</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-laptop-code"></i>
+        <span>Modern IT Lab</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-home"></i>
+        <span>Genuine Montessori House</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-flask"></i>
+        <span>Research / Projects</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-globe"></i>
+        <span>Study Trip</span>
+      </div>
+      <div class="facility-card">
+        <i class="fas fa-handshake-alt"></i>
+        <span>International Collaborations</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- Section Styling --- */
+.facilities-section {
+  color: #111;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.facilities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.facilities-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111; /* black heading */
+  position: relative;
+  display: inline-block;
+}
+
+.facilities-title::after {
+  content: '';
+  width: 60%;
+  height: 4px;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #e41f1c, #f6bc21); /* red→yellow gradient */
+}
+
+.facilities-subtitle {
+  font-size: medium;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* --- Grid Styling --- */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.facility-card {
+  background-color: #fff; /* normal white bg */
+  color: #111; /* normal text black */
+  border-radius: 15px;
+  padding: 25px 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 2px solid #e41f1c; /* subtle border */
+}
+
+.facility-card i {
+  font-size: 2.5rem;
+  color: #e41f1c; /* red icon normal */
+  margin-bottom: 15px;
+  transition: all 0.4s ease;
+}
+
+.facility-card span {
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect: gradient background & white text/icons */
+.facility-card:hover {
+  background: linear-gradient(135deg, #e41f1c, #f6bc21);
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.facility-card:hover i,
+.facility-card:hover span {
+  color: #fff;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .facilities-title {
+    font-size: 2.2rem;
+  }
+    .facilities-subtitle {
+        font-size: small;
+    margin-bottom: 30px;
+  }
+  .facility-card {
+    font-size: 0.95rem;
+    padding: 20px 10px;
+  }
+  .facility-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+}
+</style>
+
+<section class="new-facility-section">
+  <div class="new-facility-container">
+
+    <header class="new-facility-header">
+      <h2 class="new-facility-title">Facilities</h2>
+    </header>
+
+    <div class="new-facility-grid">
+
+      <!-- RED CARD -->
+      <div class="new-facility-card new-facility-red">
+        <div class="new-facility-icon">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <h3 class="new-facility-heading">
+          Industrial Relations Development Cell
+        </h3>
+        <p class="new-facility-text">
+          The Industrial Relations Development Cell serves as a structured institutional platform to strengthen
+          collaboration between academia and industry. It focuses on workforce development, industrial engagement,
+          policy understanding, compliance orientation, and sustainable employer–employee relations to support
+          organizational efficiency and economic growth.
+        </p>
+      </div>
+
+      <!-- YELLOW CARD -->
+      <div class="new-facility-card new-facility-yellow">
+        <div class="new-facility-icon">
+          <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+        <h3 class="new-facility-heading">
+          Research & Leadership
+        </h3>
+        <p class="new-facility-text">
+          The Research & Leadership facility promotes applied research, strategic inquiry, and leadership development.
+          It supports policy-oriented research, academic excellence, leadership capacity building, and evidence-based
+          decision-making to prepare individuals for institutional, national, and global leadership roles.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- New: Upcoming Events -->
+    <section class="form-section">
+  <div class="form-container-main">
+    <div class="form-section-title">
+      <h2>Reach Out</h2>
+      <div class="form-title-line"></div>
+      <p class="form-section-subtitle">Fill out the form below to get in touch or register for our programs.</p>
+    </div>
+
+    <div class="form-image-wrapper">
+      <!-- Form Box -->
+      <div class="form-left">
+        <form class="form-main" action="#" method="post">
+          
+          <!-- First + Last Name Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-input" type="text" name="first_name" required placeholder=" ">
+              <label class="form-label">First Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="text" name="last_name" required placeholder=" ">
+              <label class="form-label">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="email" name="email" required placeholder=" ">
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="tel" name="phone" required placeholder=" ">
+              <label class="form-label">Phone</label>
+            </div>
+          </div>
+
+          <!-- Details Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
+              <label class="form-label">Details / Message</label>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="form-right">
+        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="Contact Us Image" title="Contact Us Image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

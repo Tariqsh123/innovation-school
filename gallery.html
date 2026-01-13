@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Innovators Schooling System | Premier Education Since 2008</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+  
+
+    <!-- New: Campus Gallery -->
+    <section class="gallery" id="facilities" style="margin-top: 100px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Campus Gallery</h2>
+                <div class="section-subtitle">Explore our state-of-the-art facilities and vibrant campus life</div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img title="Gallery Image 1" alt="Gallery Image 1" loading="lazy" src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Classrooms">
+                </div>
+                <div class="gallery-item">
+                    <img title="Gallery Image 2" alt="Gallery Image 2" loading="lazy" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Science Lab">
+                </div>
+                <div class="gallery-item">
+                    <img title="Gallery Image 3" alt="Gallery Image 3" loading="lazy" src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Library">
+                </div>
+                <div class="gallery-item">
+                    <img title="Gallery Image 4" alt="Gallery Image 4" loading="lazy" src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sports Ground">
+                </div>
+                <div class="gallery-item">
+                    <img title="Gallery Image 5" alt="Gallery Image 5" loading="lazy" src="data:image/jpeg;base64,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" alt="Auditorium">
+                </div>
+                <div class="gallery-item">
+                    <img title="Gallery Image 6" alt="Gallery Image 6" loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Computer Lab">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lightbox Overlay -->
+<div id="lightbox-overlay">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Gallery Image" title="Gallery Image" loading="lazy">
+</div>
+<script>
+    // Select all gallery images
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const lightboxOverlay = document.getElementById('lightbox-overlay');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    // Open image in overlay
+    galleryItems.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxOverlay.style.display = 'flex';
+        });
+    });
+
+    // Close overlay on clicking X
+    lightboxClose.addEventListener('click', () => {
+        lightboxOverlay.style.display = 'none';
+    });
+
+    // Close overlay when clicking outside the image
+    lightboxOverlay.addEventListener('click', (e) => {
+        if(e.target === lightboxOverlay){
+            lightboxOverlay.style.display = 'none';
+        }
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

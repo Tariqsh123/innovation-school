@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Sustainability Programs | The Innovators Schooling System</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <div class="logo-text"><a href="index.html" title="Home Page"> <img title="Logo" src="images/logo.png" alt="Logo" loading="lazy"></a></div>
+        </div>
+
+        <div class="nav-items" id="navItems">
+            <a href="index.html" class="nav-link active"  title="Home Page">Home</a>
+            <a href="about.html" class="nav-link" title="About Us Page">About</a>
+            
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Programs <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="chinese-learning-program.html" class="dropdown-item" title="CLP Chinese Language Program">CLP Chinese Language Program</a>
+                    <a href="ai-powered-school.html" class="dropdown-item" title="AI Powered School">AI Powered School</a>
+                    <a href="agripreneurship-program.html" class="dropdown-item" title="Agripreneurship">Agripreneurship</a>
+                    <a href="environmental-sustainability-programs.html" class="dropdown-item" title="Environmental Sustainability Programs">Environmental Sustainability Programs</a>
+                    <a href="montessori-section-program.html" class="dropdown-item" title="Industrial Relations Development Cell">Montessori Section (AMI-Based | 3-Year Transformational Program)</a>
+                    <a href="primary-section-program.html" class="dropdown-item" title="Research & Leadership">Primary Section (Grade 1 – Grade 5)</a>
+                    <a href="lower-secondary-section.html" class="dropdown-item" title="Research & Leadership">Lower Secondary Section (Grade 6 & Grade 7)</a>
+                </div>
+            </div>
+            
+            <a href="facilities.html" class="nav-link" title="Facilities">Facilities</a>
+            <a href="contact-us.html" class="nav-link" title="Contact">Contact</a>
+            <button class="call-btn" onclick="window.location.href='tel:+92062223585'">
+                <i class="fas fa-phone-alt"></i>
+                Call Now
+            </button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- NEw  -->
+
+    <!-- Hero-->
+    <section id="about-hero-section" class="about-hero-section">
+    <!-- Overlay -->
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+        <h1 id="about-hero-title">Environmental Sustainability Programs at The Innovators</h1>
+        <p id="about-hero-para">
+            At The Innovation Schooling System, our Environmental Sustainability Programs empower students to explore sustainable practices, green technologies, and eco-friendly solutions. 
+            Through hands-on projects and real-world initiatives, students develop environmental awareness, critical thinking, and leadership skills to create a greener, more sustainable future.
+        </p>
+
+        <div class="about-hero-buttons">
+            <a href="about.html" title="About" class="about-hero-btn about-hero-btn-red">About Us</a>
+            <a href="tel:+92062223585" title="Call Now" class="about-hero-btn about-hero-btn-yellow">Call Now</a>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+    .about-hero-section {
+    position: relative;
+    height: 90vh;
+    margin-top: 70px;
+    background: url('images/environmental-hero-image.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* dark overlay for readability */
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f6bc21;
+}
+
+.about-hero-content p {
+    font-size: medium;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-hero-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Button Colors */
+.about-hero-btn-red {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.about-hero-btn-yellow {
+    background-color: white;
+    border: 2px solid black;
+    color: #000;
+}
+
+/* Hover inverse colors */
+.about-hero-btn-red:hover {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.about-hero-btn-yellow:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-content p {
+        font-size: medium;
+    }
+
+    .about-hero-buttons {
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+    .about-hero-content p {
+        font-size: small;
+    }
+    .about-hero-btn {
+    width: fit-content;
+}
+.about-hero-buttons {
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+</style>
+
+ <!-- 2️⃣ Admissions Open Banner -->
+ <section class="admissions-banner" id="admission">
+    <div class="container">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h3><i class="fas fa-bell"></i> Enroll in the Environmental Sustainability Program</h3>
+                <p>Give your child the opportunity to become an environmental leader! Early applicants for our Sustainability Program enjoy priority enrollment, hands-on eco-projects, and interactive learning experiences focused on green technologies and sustainable practices.</p>
+            </div>
+            <div class="banner-btns">
+                <a title="Call Now" href="tel:+92062223585" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    Call Now
+                </a>
+                <a title="Facilities" href="facilities.html" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Facilities
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- 3️⃣ Trust & Accreditation -->
+    <section class="trust">
+    <div class="container">
+        <div class="section-title">
+            <h2>Trusted & Accredited</h2>
+            <div class="section-subtitle">
+                Recognized by leading educational bodies and accredited for excellence
+            </div>
+        </div>
+        <div class="trust-logos">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 1">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 2">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 3">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://static.cdnlogo.com/logos/p/98/powered-by-android.svg" alt="Logo 4">
+            <img class="trust-logo" title="trust-logo" alt="trust-logo" loading="lazy" src="https://img.favpng.com/14/18/17/power-bi-logo-business-intelligence-brand-microsoft-corporation-png-favpng-kSjP5TatUmbDCfBz8NyH4CSK0.jpg" alt="Logo 5">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const logos = document.querySelectorAll('.trust-logo');
+
+    // Set initial state for all logos
+    logos.forEach((logo, index) => {
+        logo.style.opacity = '0';
+        logo.style.transform = 'translateY(50px)';
+        logo.style.transition = `all 0.8s ease-out ${index * 0.2}s`; // stagger effect
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                observer.unobserve(el); // animate once
+            }
+        });
+    }, { threshold: 0.2 });
+
+    // Observe each logo
+    logos.forEach(logo => observer.observe(logo));
+});
+
+</script>
+
+
+<!-- 4️⃣ Why Choose Us -->
+    <section class="new-why-choose-us" id="new-why-choose-us-section">
+    <div class="new-why-choose-us-container">
+        <div class="new-why-choose-us-header">
+            <h2>Why Choose Our Environmental Sustainability Program</h2>
+            <p>Discover the advantages of enrolling your child in our Sustainability Program</p>
+        </div>
+        <div class="new-why-choose-us-grid">
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Environmental Awareness</h3>
+                <p>Students learn about ecosystems, climate change, and sustainable practices, developing a deep understanding of environmental responsibility.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovative Green Thinking</h3>
+                <p>The program encourages creativity and problem-solving, enabling students to design eco-friendly solutions and sustainable projects.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Hands-On Sustainability Projects</h3>
+                <p>Students engage in practical projects like school gardens, recycling initiatives, and renewable energy experiments, applying sustainability concepts in real-world scenarios.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Cognitive & Critical Skills</h3>
+                <p>Learning about environmental systems enhances analytical thinking, research skills, and problem-solving abilities for lifelong impact.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#e41f1c">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Global Sustainability Perspective</h3>
+                <p>Students explore global environmental challenges, international sustainability initiatives, and the role of young leaders in creating a greener future.</p>
+            </div>
+
+            <div class="new-why-choose-us-card" data-color="#f6bc21">
+                <div class="new-why-choose-us-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Future-Ready Eco Leaders</h3>
+                <p>Structured learning, mentorship, and real-world projects prepare students to take active roles in environmental advocacy, green careers, and sustainable entrepreneurship.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about-chairman" class="about-chairman-section">
+  <div class="about-chairman-container about-chairman-layout">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-chairman-content">
+
+    <h2 class="about-chairman-title">Environmental Sustainability Programs</h2>
+    <h3 class="about-chairman-tagline">Educating for a Greener Planet | Committed to Climate Responsibility</h3>
+
+    <p class="about-chairman-text">
+        At The Innovators Schooling System, environmental stewardship is a core institutional responsibility, not an optional activity. 
+        The school maintains a strong commitment to environmental sustainability, climate responsibility, and the development of a green future for coming generations.
+    </p>
+
+    <p class="about-chairman-text">
+        Recognizing the urgent global challenges of climate change, environmental degradation, and carbon emissions, the school has designed a comprehensive Green Initiatives Program aligned with environmental protection, sustainability, and carbon credit generation.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Green Initiatives Program</h3>
+    <p class="about-chairman-text">
+        The Green Initiatives Program is a structured, research-based framework aimed at:
+    </p>
+    <ul class="about-chairman-list">
+        <li>Promoting a green and sustainable environment</li>
+        <li>Contributing to carbon sequestration and carbon credit potential</li>
+        <li>Instilling environmental responsibility and climate awareness in students</li>
+        <li>Aligning education with global sustainability goals</li>
+    </ul>
+    <p class="about-chairman-text">
+        The program integrates education, action, and impact, ensuring that sustainability is practiced, not merely taught.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Agripreneurship for Sustainability & Climate Control</h3>
+    <p class="about-chairman-text">
+        A key pillar of our sustainability vision is the Agripreneurship Program, thoughtfully designed to combine environmental care with economic value creation.
+    </p>
+    <h3 class="about-chairman-subtitle">Program Highlights</h3>
+    <ul class="about-chairman-list">
+        <li>Plantation of commercial and indigenous trees</li>
+        <li>Long-term tree nurturing and ecosystem development</li>
+        <li>Climate control through carbon absorption and biodiversity enhancement</li>
+        <li>Revenue generation through sustainable forestry models</li>
+        <li>Introduction to green entrepreneurship and carbon markets</li>
+    </ul>
+    <p class="about-chairman-text">
+        Through this initiative, students learn that economic growth and environmental protection can coexist.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Carbon Credit Awareness & Green Economy Education</h3>
+    <ul class="about-chairman-list">
+        <li>Understanding carbon footprints and emission reduction</li>
+        <li>Introduction to carbon credits and green finance concepts</li>
+        <li>Awareness of global climate policies and sustainability markets</li>
+        <li>Preparing students for future careers in the green economy</li>
+    </ul>
+
+    <h3 class="about-chairman-subtitle">Student Engagement & Environmental Leadership</h3>
+    <p class="about-chairman-text">
+        Students actively participate in:
+    </p>
+    <ul class="about-chairman-list">
+        <li>Plantation drives and green campaigns</li>
+        <li>Environmental research and sustainability projects</li>
+        <li>Community awareness programs</li>
+        <li>Climate action initiatives aligned with global best practices</li>
+    </ul>
+    <p class="about-chairman-text">
+        This hands-on approach nurtures environmental leadership, responsibility, and lifelong stewardship.
+    </p>
+
+    <h3 class="about-chairman-subtitle">Our National Commitment: GREEN PAKISTAN</h3>
+    <ul class="about-chairman-list">
+        <li>Educating environmentally conscious citizens</li>
+        <li>Actively contributing to reforestation and climate resilience</li>
+        <li>Aligning institutional goals with national and global sustainability agendas</li>
+    </ul>
+
+    <p class="about-chairman-quote">
+        <strong>Our Promise:</strong> We do not merely educate students about the environment. 
+        We empower them to protect it, sustain it, and lead climate solutions. 
+        At The Innovators Schooling System, sustainability is education in action—for Pakistan and for the planet.
+    </p>
+
+</div>
+
+
+
+    <!-- RIGHT STICKY IMAGE -->
+    <div class="about-chairman-image-wrapper">
+      <img src="images/environmental-sticky-image.png" alt="AI Program Student" class="about-chairman-image">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- 6️⃣ Vision & Mission -->
+   <section class="vision-mission-modern" style="padding-top: 50px;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Vision, Mission & Responsibility</h2>
+      <div class="gradient-line"></div>
+      <p class="section-subtitle">
+        Guiding principles that define our educational philosophy and drive impactful learning experiences.
+      </p>
+    </div>
+
+    <div class="vm-cards-layout">
+      <!-- Vision Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Vision</h3>
+        <p>
+          The School's vision is expressed in our strategic plan, which is based on the premise that excellence comes when each student achieves his best in both the curricular and co-curricular environments. The School believes this goal can best be realized within a supportive and stimulating educational environment that includes state-of-the-art education facilities and resources.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="vm-card card-red">
+        <div class="icon-wrapper">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Mission</h3>
+        <p>
+          To be an exemplary school developing wisdom, integrity, compassion & faith, and nurturing students with a sure knowledge of who they are and how they should be.
+        </p>
+      </div>
+
+      <!-- Responsibility Card -->
+      <div class="vm-card card-yellow">
+        <div class="icon-wrapper">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Responsibility</h3>
+        <p>
+          Educating the whole person for the challenges of a changing world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.new-why-choose-us-card');
+
+    // Set initial border color as currentColor
+    cards.forEach(card => {
+        const color = card.getAttribute('data-color');
+        card.style.borderTopColor = color;
+        card.style.color = color; // used by ::before for fill
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'all 0.6s ease-out';
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.2});
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+ 
+
+
+    
+<section id="clp-details-section" class="clp-details-section">
+  <div class="container">
+
+    <!-- Block 1 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.1s">
+      <div class="clp-block-image">
+        <img src="images/Environmental-Awareness-environment.png" alt="Environmental Awareness">
+      </div>
+      <div class="clp-block-content">
+        <h3>Environmental Awareness</h3>
+        <p>Students gain a deep understanding of ecosystems, climate change, and sustainable practices. Hands-on activities and real-world projects help them develop eco-conscious thinking and a sense of responsibility for the planet.</p>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.2s">
+      <div class="clp-block-image">
+        <img src="images/Green-Innovation-Creativity-environment.png" alt="Green Innovation & Creativity">
+      </div>
+      <div class="clp-block-content">
+        <h3>Green Innovation & Creativity</h3>
+        <p>Students are encouraged to design innovative solutions to environmental challenges. Creative projects in renewable energy, sustainable farming, and eco-friendly technologies foster critical thinking and problem-solving skills.</p>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="clp-block wow fadeInUp" data-wow-delay="0.3s">
+      <div class="clp-block-image">
+        <img src="images/Sustainable-Career-Opportunities-environemental.png" alt="Sustainable Career Opportunities">
+      </div>
+      <div class="clp-block-content">
+        <h3>Sustainable Career Opportunities</h3>
+        <p>The program equips students with knowledge and skills for future careers in environmental science, green technologies, sustainable agriculture, and eco-entrepreneurship. Practical projects prepare them for higher education and green innovation initiatives.</p>
+      </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="clp-block reverse wow fadeInUp" data-wow-delay="0.4s">
+      <div class="clp-block-image">
+        <img src="images/Critical-Analytical-Skills-environmental.png" alt="Critical & Analytical Skills">
+      </div>
+      <div class="clp-block-content">
+        <h3>Critical & Analytical Skills</h3>
+        <p>Students develop strong analytical and problem-solving abilities by studying environmental systems, evaluating sustainability challenges, and implementing solutions. Projects and research activities foster logical reasoning and decision-making skills essential for eco-leadership.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+/* ===== CLP Details Section ===== */
+.clp-details-section {
+  padding: 0px 20px;
+  padding-top: 60px;
+  background: #fff; /* white theme */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.clp-details-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Block layout */
+.clp-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* subtle shadow */
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid gainsboro;
+}
+
+.clp-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.clp-block-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.clp-block-content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.clp-block-content h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+  position: relative;
+}
+
+.clp-block-content h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(90deg, #f6bc21, #e41f1c); /* subtle accent */
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.clp-block-content p {
+  font-size: medium;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .clp-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+  .clp-block.reverse {
+    flex-direction: column;
+  }
+  .clp-block-image img {
+    max-width: 100%;
+  }
+  .clp-block-content h3 {
+    font-size: 30px;
+  }
+  .clp-block-content p {
+    font-size: 1.15rem;
+  }
+}
+@media(max-width:600px){
+    .clp-block-content {
+    padding: 20px;
+}
+.clp-block-content h3 {
+        font-size: 25px;
+    }
+        .clp-block-content p {
+        font-size: medium;
+    }
+    .clp-block-content h3::after {
+    margin-left: 70px;
+}
+}
+</style>
+
+
+
+
+
+<!-- Faq`/ -->
+    <section class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item active">
+      <button class="faq-question">
+        What is the Environmental Sustainability Program at The Innovation Schooling System?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The Environmental Sustainability Program is designed to teach students about ecosystems, climate change, sustainable practices, and green technologies. Students engage in hands-on projects, eco-initiatives, and interactive learning to become environmentally responsible leaders.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Which grades can enroll in the Sustainability Program?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          The program is open to students from Primary to Lower Secondary levels, with age-appropriate curriculum and projects that gradually develop eco-awareness, problem-solving, and sustainable innovation skills.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is prior knowledge of environmental science required?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No prior experience is necessary. The program begins with basic concepts of sustainability and environmental responsibility and progressively builds students’ knowledge and skills through practical projects and research activities.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Are there practical activities in the program?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes! Students participate in school gardens, recycling initiatives, renewable energy experiments, eco-challenges, and community sustainability projects to apply what they learn in real-world scenarios.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can parents enroll their child in the Environmental Sustainability Program?
+        <span class="icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Parents can contact our school office, call us, or reach out via official social media channels to register their child for the Environmental Sustainability Program and start their journey toward eco-leadership.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+
+    btn.addEventListener("click", () => {
+      faqItems.forEach(faq => {
+        if (faq !== item) {
+          faq.classList.remove("active");
+          faq.querySelector(".faq-answer").style.maxHeight = null;
+        }
+      });
+
+      item.classList.toggle("active");
+      const answer = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+
+  // Open first FAQ by default
+  document.querySelector(".faq-item.active .faq-answer").style.maxHeight =
+    document.querySelector(".faq-item.active .faq-answer").scrollHeight + "px";
+</script>
+
+<!-- New: Upcoming Events -->
+    <section class="form-section">
+  <div class="form-container-main">
+    <div class="form-section-title">
+  <h2>Contact Us About Environmental Sustainability</h2>
+  <div class="form-title-line"></div>
+  <p class="form-section-subtitle">
+    Have questions about the Chinese Language Program? Fill out the form below, and our team will get back to you via email with all the information you need.
+  </p>
+</div>
+
+
+    <div class="form-image-wrapper">
+      <!-- Form Box -->
+      <div class="form-left">
+        <form class="form-main" action="#" method="post">
+          
+          <!-- First + Last Name Row -->
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-input" type="text" name="first_name" required placeholder=" ">
+              <label class="form-label">First Name</label>
+            </div>
+            <div class="form-group">
+              <input class="form-input" type="text" name="last_name" required placeholder=" ">
+              <label class="form-label">Last Name</label>
+            </div>
+          </div>
+
+          <!-- Email Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="email" name="email" required placeholder=" ">
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+
+          <!-- Phone Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <input class="form-input" type="tel" name="phone" required placeholder=" ">
+              <label class="form-label">Phone</label>
+            </div>
+          </div>
+
+          <!-- Details Row -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <textarea class="form-input" name="details" rows="5" required placeholder=" "></textarea>
+              <label class="form-label">Details / Message</label>
+            </div>
+          </div>
+
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Image on Right -->
+      <div class="form-right">
+        <img class="form-image" src="https://bookpublisheruk.co.uk/images/art-book-publish-header-img.webp" alt="Contact Us Image" title="Contact Us Image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <img src="images/logo.png" alt="Logo" title="Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <p>Premier educational institution shaping future leaders through innovative education, academic excellence, and character development since 2008.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" title="Facebook Link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter Link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Insta Link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Linkeding Link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" title="Home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="facilities.html" title="Facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                        <li><a href="gallery.html" title="Gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="terms.html" title="Terms"><i class="fas fa-chevron-right"></i> Terms & Coditions</a></li>
+                        <li><a href="policy.html" title="Policy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Programs </h3>
+                    <ul>
+                        <li><a href="chinese-learning-program.html" title="CLP Chinese Language Program"><i class="fas fa-chevron-right"></i> CLP Chinese Language Program</a></li>
+                        <li><a href="ai-powered-school.html" title="AI Powered School"><i class="fas fa-chevron-right"></i> AI Powered School</a></li>
+                        <li><a href="agripreneurship-program.html" title="Agripreneurship"><i class="fas fa-chevron-right"></i> Agripreneurship</a></li>
+                        <li><a href="environmental-sustainability-programs.html" title="Environmental Sustainability Programs"><i class="fas fa-chevron-right"></i> Environmental Sustainability Programs</a></li>
+                        <li><a href="montessori-section-program.html" title="Industrial Relations Development Cell"><i class="fas fa-chevron-right"></i>Montessori Section (AMI-Based | 3-Year Transformational Program)</a></li>
+                        <li><a href="primary-section-program.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Primary Section (Grade 1 – Grade 5)</a></li>
+                        <li><a href="lower-secondary-section.html" title="Research & Leadership"><i class="fas fa-chevron-right"></i> Lower Secondary Section (Grade 6 & Grade 7)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>XX3X+R37, Sector 14-A Sector 14 A Orangi Town, Karachi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+92 062223585</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info.innovators@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 The Innovators Schooling System. All Rights Reserved. | Premier Education Since 2008</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+       const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navItems = document.getElementById('navItems');
+
+menuToggle.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navItems.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// 🔥 PROGRAMS DROPDOWN FIX (JS ONLY)
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 992) {
+        e.preventDefault();      // link jump stop
+        e.stopPropagation();     // menu close hone se roke
+
+        // JS se toggle
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+});
+
+// Close mobile menu when clicking a link (EXCEPT Programs)
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            navItems.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = 'auto';
+
+            // dropdown bhi band ho jaye
+            if (dropdownMenu) dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+        
+        // Tab functionality for international programs
+        const programTabs = document.querySelectorAll('.program-tab');
+        const programContents = document.querySelectorAll('.tab-content');
+        
+        programTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                programTabs.forEach(t => t.classList.remove('active'));
+                programContents.forEach(content => {
+                    content.classList.remove('active');
+                    content.style.display = 'none';
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content
+                const activeContent = document.getElementById(tabId);
+                activeContent.classList.add('active');
+                activeContent.style.display = 'block';
+            });
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinksArray = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinksArray.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                navItems.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation class to elements
+            const animateElements = document.querySelectorAll('.feature-card, .program-card, .vm-card');
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
